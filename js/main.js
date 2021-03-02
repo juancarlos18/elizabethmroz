@@ -101,7 +101,7 @@ navSlide();
 
 
 
-	var v = document.getElementsByTagName("video")[0];
+	var v = document.getElementsByTagName("video");
 	v.play();
 	v.muted = true;
 	
