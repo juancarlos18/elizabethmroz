@@ -163,7 +163,7 @@ nav ul ul ul li {
 	}
 
 	.logo h4 {
-		width: 135px;
+		width: 100%;
 		outline: solid rgba(255, 255, 255, 0.616);
 		outline-width: thin;
 		padding: 10px 0px 10px 10px;
