@@ -983,7 +983,7 @@ nav ul ul ul li {
 	height: 300%;
 	position: absolute;
 	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg, 45deg);
 	width: 120%;
 	z-index: -9;
 	transition: all 0.3s;
