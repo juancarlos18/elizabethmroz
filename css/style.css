@@ -34,7 +34,7 @@ nav > ul, .logo {
 .logo {
 	float: left;
 	color: black;
-	line-height: 30px;
+	line-height: 25px;
 	margin: 4px 0 0 60px;
 	text-transform: uppercase;
 	width: 30%;
@@ -63,9 +63,9 @@ nav ul li a {
 	color: rgb(73, 73, 73);
 	text-decoration: none !important;
 	text-transform: uppercase;
-	line-height: 60px;
-	font-size: 17px;
-	font-weight: 600;
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: 500;
 	padding: 8px 15px;
 	transition: all .9s ease;
 	border-bottom: 3px solid rgba(221, 21, 71, 0);
@@ -113,7 +113,7 @@ nav ul ul li a {
 	letter-spacing: 1px;
 	transition: all .5s ease;
 	color: black;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 nav ul ul li a:hover {
@@ -130,29 +130,6 @@ nav ul ul ul li {
 
 #show1, #show2, input {
 	display: none;
-}
-
-#nav-socialmedia {
-	float: right;
-	margin-right: 50px;
-}
-
-#nav-socialmedia li {
-	display: inline-block;
-	margin: 0 5px;
-}
-
-#nav-socialmedia li a {
-	color: black;
-	text-decoration: none !important;
-	line-height: 50px;
-	font-size: 24px;
-	transition: all .5s ease;
-}
-
-#nav-socialmedia li a:hover {
-	color: rgb(255, 0, 34);
-	box-shadow: none;
 }
 
 
@@ -178,9 +155,6 @@ nav ul ul ul li {
 	.logo h4 {
 		font-weight: 300;
 		font-size: 28px;
-	}
-	#nav-socialmedia {
-		display: none;
 	}
 }
 
@@ -251,10 +225,6 @@ nav ul ul ul li {
 
 	nav ul ul ul li {
 		position: static;
-	}
-
-	#nav-socialmedia li a {
-		color: rgb(255, 0, 34);
 	}
 
 	#show1, #show2 {
@@ -425,6 +395,18 @@ nav ul ul ul li {
 
 
 
+.modal-dialog.em-contact .social-media li {
+	list-style: none;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.modal-dialog.em-contact .social-media li a i {
+	font-size: 30px;
+	margin: 0 10px;
+}
+
 .modal-dialog.em-contact .modal-content .c1,
 .modal-dialog.em-contact .modal-content .c2 {
 	padding: 10px;
@@ -480,7 +462,7 @@ nav ul ul ul li {
 
 .modal-dialog.em-contact .modal-content .modal-body button {
 	background-color: rgb(236, 214, 211);
-	color: rgb(255, 0, 34)
+	color: rgb(255, 0, 34);
 	font-size: 16px;
 	font-weight: 600;
 	outline: none;
@@ -491,6 +473,13 @@ nav ul ul ul li {
 
 
 /* Video */
+.Portada {
+	background-image: url(../image/Cover.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 760px;
+}
 
 .videoPortada {
 	position: relative;
@@ -659,20 +648,21 @@ nav ul ul ul li {
 
 #Me a {
 	/*background-color: rgb(248, 10, 70);*/
-	background: linear-gradient(to left, rgb(255, 28, 47), rgb(204, 0, 27), rgb(255, 28, 47)) right;
+	background: rgb(252, 236, 236);
 	background-size: 200%;
 	font-size: 18px;
-	font-weight: 400;
-	color: white;
+	font-weight: 600;
+	color: rgb(255, 0, 34);
 	text-decoration: none;
 	padding: 15px;
 	transition: .6s ease;
 	border-radius: 40px;
 	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 #Me a:hover {
-	background-position: left;
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.514);
 }
 
 /**/
@@ -685,11 +675,12 @@ nav ul ul ul li {
 /**/
 
 #Me a i {
-	background-color: rgb(255, 255, 255);
-	padding: 8px;
+	background-color: rgb(255, 0, 34);
+	padding: 8px 6px;
 	border-radius: 50%;
 	margin-right: 10px;
-	color: rgb(255, 0, 34);
+	color: white;
+	text-align: center;
 }
 
 #Me .container {
@@ -703,6 +694,19 @@ nav ul ul ul li {
 
 
 /* My Play*/
+#MePlay {
+	background-image: url(../image/Youtube-a.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	width: auto;
+	margin: 0;
+}
+
+#MePlay .news-active {
+	margin-top: 4%;
+}
 
 .latest-news-wrap-x {
 	margin-bottom: 20px;
@@ -710,7 +714,6 @@ nav ul ul ul li {
 
 .latest-news-wrap-y {
 	margin-bottom: 20px;
-	border-left: solid 3px red;
 }
 
 .latest-news-wrap-x .news-content span,
@@ -779,12 +782,16 @@ nav ul ul ul li {
 .front{
 	transform: perspective(600px) rotateY(0deg);
 	-webkit-transform: perspective(600px) rotateY(0deg);
+	-ms-transform: perspective(600px) rotateY(0deg);
+	-o-transform: perspective(600px) rotateY(0deg);
 }
 
 .back{
 	background: rgb(223, 223, 223);
 	transform: perspective(600px) rotateY(180deg);
 	-webkit-transform: perspective(600px) rotateY(180deg);
+	-ms-transform: perspective(600px) rotateY(180deg);
+	-o-transform: perspective(600px) rotateY(180deg);
 }
 
 .back-content{
@@ -853,8 +860,13 @@ nav ul ul ul li {
 /* WATCH */
 
 #Channel {
+	margin-top: -20px;
 	padding: 20px 0;
-	background-color: black;
+	/*background-color: black;*/
+	background-image: url(../image/Youtube.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .section-title-watch h2 {
@@ -1268,24 +1280,9 @@ nav ul ul ul li {
 }
 
 
-
-
-
-
-.latest-news-area{
-	margin-top: 40px;
-}
-
 .latest-news-wrap{
-	box-shadow: 0px 3px 10px rgba(201, 201, 201, 0.507);
-	background: rgb(235, 235, 235);
-	/*border-radius: 15px;*/
 	margin-bottom: 20px;
 	transition: all .4s ease;
-}
-
-.latest-news-wrap:hover{
-	box-shadow: 0px 3px 10px rgb(173, 155, 155);
 }
 
 
@@ -1494,9 +1491,12 @@ nav ul ul ul li {
 
 #NorwayPlace {
 	background-color: rgba(0, 0, 0, 0.075);
-	border-radius: 20px;
 }
 
 #NorwayPlace .section-title h2 {
-	color: rgb(88, 88, 88);
+	margin: 40px 0;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: rgb(34, 34, 34);
 }
