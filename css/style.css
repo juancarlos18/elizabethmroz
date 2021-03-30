@@ -684,8 +684,14 @@ nav ul ul ul li {
 #MePlay {
 	background-image: url(../image/Youtube-a.png);
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	-webkit-background-attachmen: fixed;
+	-moz-background-attachmen: fixed;
+	-o-background-attachmen: fixed;
 	background-repeat: no-repeat;
 	width: auto;
 	margin: 0;
