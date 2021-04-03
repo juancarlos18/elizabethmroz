@@ -549,13 +549,12 @@ nav ul ul ul li {
 	background: none;
 	outline: none;
 	border: none;
-	color: black;
+	color: white;
 	text-transform: uppercase;
 }
 
 #Norway a button:hover {
 	text-decoration: none;
-	color: white;
 	letter-spacing: 3px;
 }
 
@@ -637,6 +636,7 @@ nav ul ul ul li {
 	font-weight: 400;
 	margin: 120px 0 20px 0;
 	color: black;
+	padding: 0 20px;
 }
 
 #Me .container {
@@ -718,21 +718,34 @@ nav ul ul ul li {
 }
 
 #MePlay2 a {
-	background-color: rgba(255, 0, 0, 0.753);
-	background-size: 200%;
+	background-color: rgb(241, 216, 216);
 	font-size: 18px;
 	font-weight: 500;
-	color: rgb(255, 255, 255);
+	color: rgb(66, 33, 33);
 	text-decoration: none;
-	padding: 10px;
-	transition: .6s ease;
+	padding: 10px 15px;
+	transition: .2s ease;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	border-radius: 10px;
 }
 
 #MePlay2 a:hover {
 	box-shadow: 0 0 10px rgba(255, 0, 0, 0.514);
 }
+
+
+@media screen and (max-width: 500px) {
+	#MePlay2 .photo-circle {
+		width: 180px;
+		height: 180px;
+	}
+
+	#MePlay2 .latest-news-wrap {
+		margin: 60px 0;
+	}
+}
+
 
 /**/
 @media screen and (max-width: 995px) {
@@ -744,9 +757,8 @@ nav ul ul ul li {
 /**/
 
 #MePlay2 a i {
-	padding: 8px 6px;
-	margin-right: 8px;
-	color: white;
+	padding: 9px 7px;
+	color: rgb(209, 106, 106);
 	text-align: center;
 }
 
@@ -772,16 +784,23 @@ nav ul ul ul li {
 	background-repeat: no-repeat;
 }
 
-.section-title-watch h2 {
+#Channel .section-title-watch h2 {
 	font-weight: 400;
 	color: white;
 	margin-left: 20px;
 }
 
-.section-title-watch h2 font{
+#Channel .section-title-watch h2 font{
 	color: red;
 	text-shadow: none;
 	font-weight: 700;
+}
+
+@media screen and (max-width: 390px) {
+	#Channel .section-title-watch h2 {
+		font-size: 22px;
+	}
+	
 }
 
 
@@ -867,8 +886,8 @@ nav ul ul ul li {
 #Contact .logo-c2::before {
 	content: 'Mroz';
 	font-size: 30px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 0.781);
+	font-weight: 600;
+	color: rgb(245, 47, 47);
 	text-transform: uppercase;
 }
 
