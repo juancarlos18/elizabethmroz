@@ -41,8 +41,8 @@ nav > ul, .logo {
 }
 
 .logo h4 {
-	font-weight: 300;
-	font-size: 30px;
+	font-weight: 400;
+	font-size: 25px;
 }
 
 nav ul {
@@ -468,6 +468,14 @@ nav ul ul ul li {
 	height: 760px;
 }
 
+.Portada2 {
+	background-image: url(../image/Cover-Photo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 760px;
+}
+
 .videoPortada {
 	position: relative;
 	height: 780px;
@@ -513,44 +521,42 @@ nav ul ul ul li {
 	}
 }
 
+#Norway {
+	background-color: rgba(0, 0, 0, 0.185);
+}
 
-.videoNorway a {
-	font-weight: 400;
-	font-size: 18px;
-	letter-spacing: 2px;
+#Norway a {
 	position: absolute;
 	z-index: 100;
-	width: 100%;
-	/*box-shadow: 0 0 10px rgb(0, 0, 0);*/
+	box-shadow: 0 0 10px rgb(0, 0, 0);
 	overflow: hidden;
-	padding: 10px 0;
 	transition: all 0.5s ease 0s;
-	/*background-color: rgba(0, 0, 0, 0.171);*/
-	color: rgb(155, 39, 58);
+	background-color: rgba(0, 0, 0, 0.397);
+	border-radius: 20px;
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);
 	text-transform: uppercase;
+	padding: 5px 0;
+	margin: -60px auto 1.25rem -50px;
 }
 
-.videoNorway a {
-	top: 480px;
-}
-
-.videoNorway a button {
-	font-weight: 400;
+#Norway a button {
+	position: relative;
+	width: 110px;
+	font-weight: 500;
 	font-size: 18px;
 	letter-spacing: 2px;
 	transition: all 0.5s ease 0s;
 	background: none;
 	outline: none;
 	border: none;
-	color: white;
+	color: black;
 	text-transform: uppercase;
 }
 
-.videoNorway a button:hover {
+#Norway a button:hover {
 	text-decoration: none;
 	color: white;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 }
 
 
@@ -629,45 +635,8 @@ nav ul ul ul li {
 #Me p {
 	font-size: 22px;
 	font-weight: 400;
-	margin: 40px 0 60px 0;
+	margin: 120px 0 20px 0;
 	color: black;
-}
-
-#Me a {
-	/*background-color: rgb(248, 10, 70);*/
-	background: rgb(252, 236, 236);
-	background-size: 200%;
-	font-size: 18px;
-	font-weight: 600;
-	color: rgb(255, 0, 34);
-	text-decoration: none;
-	padding: 15px;
-	transition: .6s ease;
-	border-radius: 40px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-
-#Me a:hover {
-	box-shadow: 0 0 10px rgba(255, 0, 0, 0.514);
-}
-
-/**/
-@media screen and (max-width: 995px) {
-	#Me > div div {
-		width: 100%;
-		margin-bottom: 25px;
-	}
-}
-/**/
-
-#Me a i {
-	background-color: rgb(255, 0, 34);
-	padding: 8px 6px;
-	border-radius: 50%;
-	margin-right: 10px;
-	color: white;
-	text-align: center;
 }
 
 #Me .container {
@@ -681,8 +650,29 @@ nav ul ul ul li {
 
 
 /* My Play*/
+
 #MePlay {
 	background-image: url(../image/Youtube-a.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-attachmen: fixed;
+	-moz-background-attachmen: fixed;
+	-o-background-attachmen: fixed;
+	background-repeat: no-repeat;
+	width: auto;
+	height: 600px;
+	margin: 0;
+}
+
+
+
+#MePlay2 {
+	/*background-color: rgb(253, 184, 184);*/
+	background-color: rgb(255, 255, 255);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -697,12 +687,11 @@ nav ul ul ul li {
 	margin: 0;
 }
 
-#MePlay .news-active {
-	margin: 6% 0 350px 0;
+#MePlay2 .news-active {
+	text-align: center;
 }
 
-.photo-circle {
-	margin-top: 150px;
+#MePlay2 .photo-circle {
 	background-image: url(../image/contact-y.jpg);
 	background-size: cover;
 	width: 220px;
@@ -714,157 +703,57 @@ nav ul ul ul li {
 	margin: 40px auto 1.25rem auto;
 }
 
-.latest-news-wrap-x {
-	margin-bottom: 20px;
-	background-color: rgb(241, 231, 231);
-	border-radius: 20px;
-	box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
-	border: 5px solid white;
+#MePlay2 {
+	text-align: center;
 }
 
-.latest-news-wrap-y {
-	margin-bottom: 20px;
-	background-color: rgb(241, 231, 231);
-	border-radius: 20px;
-	box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
-	border: 5px solid white;
-}
-
-.latest-news-wrap-x .news-content span,
-.latest-news-wrap-y .news-content span {
-	color: rgb(255, 0, 0);
-}
-
-.latest-news-wrap-x .news-content p,
-.latest-news-wrap-y .news-content p {
+#MePlay2 p {
 	color: black;
 	font-weight: 500;
 }
 
-.latest-news-wrap-x .news-content b,
-.latest-news-wrap-y .news-content b {
+#MePlay2 b {
 	color: rgb(255, 0, 0);
 	font-weight: 600;
+}
+
+#MePlay2 a {
+	background-color: rgba(255, 0, 0, 0.753);
+	background-size: 200%;
+	font-size: 18px;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 10px;
+	transition: .6s ease;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#MePlay2 a:hover {
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.514);
+}
+
+/**/
+@media screen and (max-width: 995px) {
+	#MePlay2 > div div {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+}
+/**/
+
+#MePlay2 a i {
+	padding: 8px 6px;
+	margin-right: 8px;
+	color: white;
+	text-align: center;
 }
 
 /*My Play*/
 
 
 
-
-
-
-
-
-/* Redes Sociales */
-
-.middle{
-	position: relative;
-}
-
-.card{
-	cursor: pointer;
-	height: 480px;
-	margin-bottom: 25px;
-}
-
-.front,.back{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	backface-visibility: hidden;
-	position: absolute;
-	transition: all .5s linear;
-	border-radius: 15px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.front span{
-	color: white;
-	font-weight: 400;
-	font-size: 50px;
-	top: 5%;
-	left: 48%;
-	position: absolute;
-}
-
-.front img{
-	height: 100%;
-	background-size: cover;
-}
-
-.front{
-	transform: perspective(600px) rotateY(0deg);
-	-webkit-transform: perspective(600px) rotateY(0deg);
-	-ms-transform: perspective(600px) rotateY(0deg);
-	-o-transform: perspective(600px) rotateY(0deg);
-}
-
-.back{
-	background: rgb(223, 223, 223);
-	transform: perspective(600px) rotateY(180deg);
-	-webkit-transform: perspective(600px) rotateY(180deg);
-	-ms-transform: perspective(600px) rotateY(180deg);
-	-o-transform: perspective(600px) rotateY(180deg);
-}
-
-.back-content{
-	margin-top: 20%;
-	text-align: center;
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-
-.back-content h2{
-	font-weight: 400;
-	letter-spacing: 1px;
-	font-size: 26px;
-	color: rgb(109, 109, 109);
-}
-
-.back-content h4{
-	font-weight: 500;
-	font-size: 18px;
-	color: rgb(0, 0, 0);
-}
-
-.back-content span{
-	font-weight: 400;
-	font-size: 60px;
-}
-
-.back-content p{
-	font-weight: 400;
-	font-size: 17px;
-	color: rgb(0, 0, 0);
-}
-
-.card:hover > .front{
-	transform: perspective(600px) rotateY(-180deg);
-	-webkit-transform: perspective(600px) rotateY(-180deg);
-}
-
-.card:hover > .back{
-	transform: perspective(600px) rotateY(0deg);
-	-webkit-transform: perspective(600px) rotateY(0deg);
-}
-
-.button-i a {
-	font-size: 18px;
-	font-weight: 500;
-	color: rgb(85, 85, 85);
-	transition: all .6s ease;
-}
-
-.button-i:hover a {
-	text-decoration: none;
-	color: black;
-	letter-spacing: 2px;
-	font-weight: 400;
-}
-
-/* Redes Sociales */
 
 	
 
@@ -917,7 +806,7 @@ nav ul ul ul li {
 	overflow: hidden;
 	padding: 2px 5px;
 	position: relative;
-	background-color: white;
+	background-color: black;
 	margin-top: 15px;
 	width: 200px;
 	margin: 40px auto 1.25rem auto;
@@ -964,15 +853,29 @@ nav ul ul ul li {
 #Contact .logo-c::before {
 	content: 'Elizabeth';
 	font-size: 30px;
-	font-weight: 500;
-	color: rgba(255, 255, 255, 0.438);
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.781);
 	text-transform: uppercase;
 }
 
 #Contact .logo-c {
 	position: relative;
 	letter-spacing: 8px;
-	margin: 100px 0 50px 0;
+	margin: 100px 0 10px 0;
+}
+
+#Contact .logo-c2::before {
+	content: 'Mroz';
+	font-size: 30px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.781);
+	text-transform: uppercase;
+}
+
+#Contact .logo-c2 {
+	position: relative;
+	letter-spacing: 8px;
+	margin: 0 0 80px 0;
 }
 
 #Contact .social-media {
@@ -985,9 +888,11 @@ nav ul ul ul li {
 	display: inline-block;
 	margin-bottom: 40px;
 	background-color: rgb(31, 31, 31);
+	border-radius: 50%;
 	width: 50px;
 	height: 50px;
 	margin: 0 10px;
+	transition: all .2s ease;
 }
 
 #Contact .social-media li a {
@@ -999,11 +904,10 @@ nav ul ul ul li {
 	font-size: 30px;
 	margin-top: 25%;
 	color: white;
-	transition: all .5s ease;
 }
 
-#Contact .social-media li a i:hover {
-	color: rgb(255, 64, 64);
+#Contact .social-media li:hover {
+	background-color: rgb(230, 24, 24);
 }
 
 
@@ -1012,7 +916,7 @@ nav ul ul ul li {
 /* Footer */
 
 .footer {
-	font-weight: 500;
+	font-weight: 400;
 	margin: 10px 0 10px 0;
 	color: white;
 	text-align: center;
@@ -1021,7 +925,7 @@ nav ul ul ul li {
 .footer a {
 	color: rgb(255, 0, 0);
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .footer a:hover {
@@ -1052,18 +956,17 @@ nav ul ul ul li {
 
 .post-slider{
 	position: relative;
-	border-radius: 10px;
 }
 
 .post-slider i{
-	color: rgb(252, 118, 118);
+	color: white;
 	font-size: 80px !important;
-	transition: all .4s ease;
+	transition: all .3s ease;
 	margin: 0 20px;
 }
 
 .post-slider i:hover{
-	color: rgb(253, 152, 152);
+	color: rgb(255, 0, 0);
 }
 
 @media screen and (max-width: 1040px){
@@ -1099,7 +1002,6 @@ nav ul ul ul li {
 	margin: 0px 10px;
 	display: inline-block;
 	box-shadow: 0 0 10px rgb(0, 0, 0);
-	border-radius: 10px;
 }
 
 .post-slider .post-wrapper .post span{
@@ -1110,8 +1012,7 @@ nav ul ul ul li {
 	text-align: justify;
 	margin-left: 30px;
 	margin-top: 20px;
-	border-radius: 20px;
-	background-color: rgba(61, 59, 59, 0.63);
+	background-color: rgba(0, 0, 0, 0.822);
 }
 
 .post-slider .post-wrapper .post span p{
@@ -1132,7 +1033,6 @@ nav ul ul ul li {
 .post-slider .post-wrapper .post .slider-image{
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
 }
 
 .post-slider .prev{
