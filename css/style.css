@@ -177,21 +177,14 @@ nav ul ul ul li {
 	}
 }
 
-@media screen and (max-width:917px) {
-	.logo {
-		width: 19%;
-	}
-}
-
-
-@media screen and (max-width:876px) {
+@media screen and (max-width:1081px) {
 
 	nav {
 		padding-bottom: 6px;
 	}
 
 	.logo {
-		width: 67%;
+		width: 100%;
 		outline: none;
 		text-align: center;
 	}
@@ -200,6 +193,7 @@ nav ul ul ul li {
 		padding: 8px 0px 10px 0;
 		font-size: 20px;
 		font-weight: 400;
+		margin-left: -12%;
 	}
 
 	nav ul {
@@ -318,6 +312,31 @@ nav ul ul ul li {
 }
 
 
+@media screen and (max-width:916px) {
+	.logo h4 {margin-left: -15%;}
+}
+
+@media screen and (max-width:818px) {
+	.logo h4 {margin-left: -17%;}
+}
+
+@media screen and (max-width:675px) {
+	.logo h4 {margin-left: -19%;}
+}
+
+@media screen and (max-width:600px) {
+	.logo h4 {margin-left: -22%;}
+}
+
+@media screen and (max-width:548px) {
+	.logo h4 {margin-left: -25%;}
+}
+
+@media screen and (max-width:464px) {
+	.logo h4 {margin-left: -29%;}
+}
+
+
 .nav-active {
 	display: block;
 }
@@ -391,8 +410,7 @@ nav ul ul ul li {
 }*/
 
 .modal-dialog.em-norway .modal-content {
-	background-color: black;
-	border-radius: 0px;
+	background-color: white;
 	padding: 0 20px;
 }
 
@@ -404,20 +422,19 @@ nav ul ul ul li {
 .modal-dialog.em-norway .modal-content .modal-body h1 {
 	font-weight: 500;
 	font-size: 20px;
-	color: red;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	color: rgb(230, 45, 45);
+	text-transform: capitalize;
 }
 
 .modal-dialog.em-norway .modal-content .modal-body p {
-	font-weight: 400;
-	font-size: 13px;
-	color: white;
+	font-weight: 500;
+	font-size: 14px;
+	color: black;
 }
 
 .modal-dialog.em-norway .modal-content .modal-footer button {
 	width: 100%;
-	background-color: rgb(20, 20, 20);
+	background-color: rgb(202, 51, 51);
 	color: white;
 	font-size: 15px;
 	font-weight: 400;
@@ -500,34 +517,30 @@ nav ul ul ul li {
 #Norway a {
 	position: absolute;
 	z-index: 100;
-	box-shadow: 0 0 10px rgb(0, 0, 0);
+	/*box-shadow: 0 0 10px rgb(0, 0, 0);*/
 	overflow: hidden;
-	transition: all 0.5s ease 0s;
-	background-color: rgba(0, 0, 0, 0.397);
-	border-radius: 20px;
-	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);
-	text-transform: uppercase;
-	padding: 5px 0;
-	margin: -60px auto 1.25rem -50px;
+	background-color: rgba(255, 255, 255, 0.842);
+	border-radius: 50%;
+	/*text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);*/
+	margin: -60px auto 1.25rem -14px;
+	padding: 6px 0;
 }
 
 #Norway a button {
 	position: relative;
-	width: 110px;
-	font-weight: 500;
+	width: 40px;
+	font-weight: 600;
 	font-size: 18px;
-	letter-spacing: 2px;
 	transition: all 0.5s ease 0s;
 	background: none;
 	outline: none;
 	border: none;
-	color: white;
-	text-transform: uppercase;
+	color: red;
+	text-transform: capitalize;
 }
 
 #Norway a button:hover {
 	text-decoration: none;
-	letter-spacing: 3px;
 }
 
 
@@ -602,13 +615,28 @@ nav ul ul ul li {
 
 
 /* Intro */
+#Me .photo-circle {
+	background-image: url(../image/contact-y.jpg);
+	background-size: cover;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: relative;
+	border: 5px solid white;
+    box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
+	margin: 40px auto 1.25rem auto;
+}
 
 #Me p {
-	font-size: 22px;
-	font-weight: 400;
-	margin: 120px 0 20px 0;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 60px 0 40px 0;
 	color: black;
 	padding: 0 20px;
+}
+
+#Me p b {
+	color: rgb(248, 0, 0);
 }
 
 #Me .container {
@@ -666,13 +694,13 @@ nav ul ul ul li {
 }
 
 #MePlay2 .photo-circle {
-	background-image: url(../image/contact-y.jpg);
+	background-image: url(../Photos/2bedc1f2-3b6d-47b8-a944-3b8895ff31e2.jpg);
 	background-size: cover;
+	background-position: bottom;
 	width: 220px;
 	height: 220px;
 	border-radius: 50%;
 	position: relative;
-	border: 5px solid white;
     box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
 	margin: 40px auto 1.25rem auto;
 }
@@ -703,7 +731,7 @@ nav ul ul ul li {
 	display: inline-block;
 	height: 200px;
 	width: 300px;
-	margin: 10px;
+	margin: 10px 15px;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -723,7 +751,7 @@ nav ul ul ul li {
 
 #MePlay2 a {
 	padding: 8px 12px;
-	background-color: rgba(0, 0, 0, 0.212);
+	background-color: rgba(0, 0, 0, 0.521);
 	border: solid 2px white;
 	font-size: 16px;
 	font-weight: 500;
@@ -753,12 +781,6 @@ nav ul ul ul li {
 	#MePlay2 .latest-news-wrap {
 		margin: 60px 0;
 	}
-
-	#MePlay2 .box-mp1,
-	#MePlay2 .box-mp2,
-	#MePlay2 .box-mp3 {
-		width: 280px;
-	}
 }
 
 
@@ -786,16 +808,59 @@ nav ul ul ul li {
 #Channel {
 	margin-top: -20px;
 	padding: 20px 0;
-	/*background-color: black;*/
+	background-color: rgb(231, 231, 231);
+	/*
 	background-image: url(../image/Youtube.png);
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+}
+
+#Channel span {
+	margin: 20px;
+	padding: 20px 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#Channel .perfil-y {
+	background-color: white;
+	height: 420px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+#Channel .perfil-y p {
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+}
+
+@media screen and (max-width: 762px) {
+	#Channel .perfil-y {
+		width: 100%;
+		border-radius: 20px;
+		margin-bottom: 60px;
+	}
+	
+}
+
+#Channel .perfil-y .photo-circle-y {
+	background-image: url(../Photos/v5.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: relative;
+	border: 5px solid rgb(182, 145, 145);
+    box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
+	margin: 40px auto 1.25rem auto;
 }
 
 #Channel .section-title-watch h2 {
 	font-weight: 400;
-	color: white;
+	color: black;
 	margin-left: 20px;
 }
 
@@ -834,7 +899,6 @@ nav ul ul ul li {
 	overflow: hidden;
 	padding: 2px 5px;
 	position: relative;
-	background-color: black;
 	margin-top: 15px;
 	width: 200px;
 	margin: 40px auto 1.25rem auto;
@@ -863,6 +927,34 @@ nav ul ul ul li {
 .button-suscribe-follow:hover a {
 	text-decoration: none;
 	color: rgb(235, 41, 50);
+}
+
+
+#Channel .items {
+	display: flex;
+	overflow-x: auto;
+	margin-top: 15px;
+}
+
+#Channel .items .item {
+	min-width: 100%;
+	max-height: 200px;
+	margin: 10px;
+}
+
+#Channel .items::-webkit-scrollbar {
+	width: 8px;
+}
+
+#Channel .items::-webkit-scrollbar-thumb {
+	background: linear-gradient(to right, transparent, #eb4848);
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 1360px) {
+	#Channel .items::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 /* WATCH */
@@ -1154,53 +1246,33 @@ nav ul ul ul li {
 	margin: 15px 0;
 }
 
-.btn-g, .btn-c {
-	margin-top: 20px;
-}
-
-.btn-c a {
-	/*background-color: rgb(172, 173, 166);*/
-	color: black;
-	width: 100%;
-	font-size: 15px;
-	font-weight: 400;
-	padding: 10px 28px;
-	letter-spacing: 2px;
-	transition: all .4s ease;
-	text-transform: uppercase;
-}
-
-.btn-c a:hover {
-	text-decoration: none;
-	letter-spacing: 4px;
-	color: black;
-}
-
-
-.btn-g{
+.btn-g {
 	overflow: hidden;
 	padding: 10px 5px;
 	position: relative;
 	margin-top: 15px;
+	background-color: rgb(194, 194, 194);
+	border-radius: 10px;
+	width: 140px;
+	margin: 40px auto 1.25rem auto;
+	text-align: center;
+	transition: all .3s ease;
 }
 
 .btn-g a {
 	width: 100%;
-}
-
-.btn-g a span{
 	font-size: 18px;
 	font-weight: 600;
-	color: rgb(80, 80, 80);
-	transition: all .4s ease;
+	color: rgb(51, 51, 51);
 }
 
-.btn-g:hover a{
+.btn-g:hover {
+	background-color: rgb(199, 173, 173);
+}
+
+.btn-g:hover a {
 	text-decoration: none;
-}
-
-.btn-g a:hover span {
-	color: black;
+	color: rgb(51, 51, 51);
 }
 
 
@@ -1233,7 +1305,7 @@ nav ul ul ul li {
 	font-weight: 400;
 	color: white;
 	transform: scaleY(0);
-	transition: transform .5s;
+	transition: transform .3s;
 }
 
 .no-gutters:hover .details {
@@ -1243,18 +1315,16 @@ nav ul ul ul li {
 
 .no-gutters .details .detcont {
 	position: absolute;
-	top: 30%;
+	top: 20%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	padding: 15px;
 }
 
-.work .no-gutters .details .detcont h2{
+.work .no-gutters .details .detcont h2 {
 	margin: 0 0 10px 0;
 	padding: 0;
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	font-size: 16px;
 }
 
 /* -Pictures Gallery- */
