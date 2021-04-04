@@ -519,11 +519,12 @@ nav ul ul ul li {
 	z-index: 100;
 	/*box-shadow: 0 0 10px rgb(0, 0, 0);*/
 	overflow: hidden;
-	/*background-color: rgba(255, 255, 255, 0.842);
-	border-radius: 50%;*/
+	background-color: rgba(0, 0, 0, 0.644);
+	border-radius: 50%;
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);
-	margin: -60px auto 1.25rem -14px;
+	margin: -60px auto 1.25rem -18px;
 	padding: 6px 0;
+	text-align: center;
 }
 
 #Norway a button {
@@ -652,27 +653,6 @@ nav ul ul ul li {
 /* My Play*/
 
 #MePlay {
-	background-image: url(../image/Youtube-a.png);
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-position: center;
-	-webkit-background-position: center;
-	-moz-background-position: center;
-	-o-background-position: center;
-	background-attachment: fixed;
-	-webkit-background-attachmen: fixed;
-	-moz-background-attachmen: fixed;
-	-o-background-attachmen: fixed;
-	background-repeat: no-repeat;
-	width: auto;
-	height: 600px;
-	margin: 0;
-}
-
-
-#MePlay2 {
 	/*background-color: rgb(253, 184, 184);*/
 	background-color: rgb(255, 255, 255);
 	background-size: cover;
@@ -687,13 +667,14 @@ nav ul ul ul li {
 	background-repeat: no-repeat;
 	width: auto;
 	margin: 0;
-}
-
-#MePlay2 .news-active {
 	text-align: center;
 }
 
-#MePlay2 .photo-circle {
+#MePlay .news-active {
+	text-align: center;
+}
+
+#MePlay .photo-circle {
 	background-image: url(../Photos/2bedc1f2-3b6d-47b8-a944-3b8895ff31e2.jpg);
 	background-size: cover;
 	background-position: bottom;
@@ -705,29 +686,25 @@ nav ul ul ul li {
 	margin: 40px auto 1.25rem auto;
 }
 
-#MePlay2 {
-	text-align: center;
-}
-
-#MePlay2 p {
+#MePlay p {
 	color: black;
 	font-weight: 500;
 	font-size: 17px;
 	margin: 40px 0;
 }
 
-#MePlay2 b {
+#MePlay b {
 	color: rgb(255, 0, 0);
 	font-weight: 600;
 }
 
-#MePlay2 .box-mp {
+#MePlay .box-mp {
 	display: block;
 }
 
-#MePlay2 .box-mp1,
-#MePlay2 .box-mp2,
-#MePlay2 .box-mp3 {
+#MePlay .box-mp1,
+#MePlay .box-mp2,
+#MePlay .box-mp3 {
 	display: inline-block;
 	height: 200px;
 	width: 300px;
@@ -737,19 +714,19 @@ nav ul ul ul li {
 	text-align: center;
 }
 
-#MePlay2 .box-mp1 {
+#MePlay .box-mp1 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/432505c6-1adb-4663-85d8-a622b99cd6d7.jpg);
 }
 
-#MePlay2 .box-mp2 {
+#MePlay .box-mp2 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/v5.jpg);
 }
 
-#MePlay2 .box-mp3 {
+#MePlay .box-mp3 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/v18.jpg);
 }
 
-#MePlay2 a {
+#MePlay a {
 	padding: 8px 12px;
 	background-color: rgba(0, 0, 0, 0.521);
 	border: solid 2px white;
@@ -765,7 +742,7 @@ nav ul ul ul li {
 	left: 0;
 }
 
-#MePlay2 a:hover {
+#MePlay a:hover {
 	background-color: white;
 	color: black;
 	font-weight: 600;
@@ -773,12 +750,12 @@ nav ul ul ul li {
 
 
 @media screen and (max-width: 500px) {
-	#MePlay2 .photo-circle {
+	#MePlay .photo-circle {
 		width: 180px;
 		height: 180px;
 	}
 
-	#MePlay2 .latest-news-wrap {
+	#MePlay .latest-news-wrap {
 		margin: 60px 0;
 	}
 }
@@ -786,7 +763,7 @@ nav ul ul ul li {
 
 /**/
 @media screen and (max-width: 995px) {
-	#MePlay2 > div div {
+	#MePlay > div div {
 		width: 100%;
 		margin-bottom: 25px;
 	}
@@ -808,12 +785,7 @@ nav ul ul ul li {
 #Channel {
 	margin-top: -20px;
 	padding: 20px 0;
-	background-color: rgb(231, 231, 231);
-	/*
-	background-image: url(../image/Youtube.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;*/
+	background-color: rgb(219, 219, 219);
 }
 
 #Channel span {
@@ -861,7 +833,7 @@ nav ul ul ul li {
 #Channel .section-title-watch h2 {
 	font-weight: 400;
 	color: black;
-	margin-left: 20px;
+	margin: 60px 0 0 20px;
 }
 
 #Channel .section-title-watch h2 font{
@@ -961,12 +933,24 @@ nav ul ul ul li {
 
 
 
+#NorwayPlace {
+	background-color: rgb(235, 235, 235);
+}
+
+#NorwayPlace .section-title h2 {
+	margin: 40px 0;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: rgb(34, 34, 34);
+}
+
 
 
 
 
 #Contact {
-	background-color: black;
+	background-color: white;
 	text-align: center;
 }
 
@@ -974,7 +958,7 @@ nav ul ul ul li {
 	content: 'Elizabeth';
 	font-size: 30px;
 	font-weight: 400;
-	color: rgba(255, 255, 255, 0.781);
+	color: rgb(95, 95, 95);
 	text-transform: uppercase;
 }
 
@@ -999,19 +983,18 @@ nav ul ul ul li {
 }
 
 #Contact .social-media {
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
 
 #Contact .social-media li {
 	list-style: none;
 	text-decoration: none;
 	display: inline-block;
-	margin-bottom: 40px;
-	background-color: rgb(31, 31, 31);
+	background-color: rgb(224, 224, 224);
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	margin: 0 10px;
+	margin: 10px;
 	transition: all .2s ease;
 }
 
@@ -1022,12 +1005,16 @@ nav ul ul ul li {
 
 #Contact .social-media li a i {
 	font-size: 30px;
-	margin-top: 25%;
-	color: white;
+	margin-top: 23%;
+	color: rgb(99, 99, 99);
 }
 
 #Contact .social-media li:hover {
 	background-color: rgb(230, 24, 24);
+}
+
+#Contact .social-media li:hover a i {
+	color: white;
 }
 
 
@@ -1038,12 +1025,12 @@ nav ul ul ul li {
 .footer {
 	font-weight: 400;
 	margin: 10px 0 10px 0;
-	color: white;
+	color: rgb(231, 209, 209);
 	text-align: center;
 }
 
 .footer a {
-	color: rgb(255, 0, 0);
+	color: rgb(255, 235, 235);
 	text-decoration: none;
 	font-weight: 500;
 }
@@ -1054,7 +1041,7 @@ nav ul ul ul li {
 
 .footer-s {
 	margin-top: -5px;
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(202, 70, 70);
 }
 
 /* Footer */
@@ -1586,16 +1573,3 @@ nav ul ul ul li {
 }
 
 /* -News- */
-
-
-#NorwayPlace {
-	background-color: rgba(0, 0, 0, 0.075);
-}
-
-#NorwayPlace .section-title h2 {
-	margin: 40px 0;
-	font-weight: 400;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	color: rgb(34, 34, 34);
-}
