@@ -519,9 +519,9 @@ nav ul ul ul li {
 	z-index: 100;
 	/*box-shadow: 0 0 10px rgb(0, 0, 0);*/
 	overflow: hidden;
-	background-color: rgba(255, 255, 255, 0.842);
-	border-radius: 50%;
-	/*text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);*/
+	/*background-color: rgba(255, 255, 255, 0.842);
+	border-radius: 50%;*/
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);
 	margin: -60px auto 1.25rem -14px;
 	padding: 6px 0;
 }
@@ -535,7 +535,7 @@ nav ul ul ul li {
 	background: none;
 	outline: none;
 	border: none;
-	color: red;
+	color: white;
 	text-transform: capitalize;
 }
 
