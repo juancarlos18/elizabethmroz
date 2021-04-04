@@ -522,8 +522,8 @@ nav ul ul ul li {
 	background-color: rgba(0, 0, 0, 0.644);
 	border-radius: 50%;
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.534);
-	margin: -60px auto 1.25rem -18px;
-	padding: 6px 0;
+	margin: -60px auto 1.25rem -20px;
+	padding: 8px 0;
 	text-align: center;
 }
 
@@ -700,6 +700,7 @@ nav ul ul ul li {
 
 #MePlay .box-mp {
 	display: block;
+	margin-bottom: 60px;
 }
 
 #MePlay .box-mp1,
@@ -1573,3 +1574,4 @@ nav ul ul ul li {
 }
 
 /* -News- */
+
