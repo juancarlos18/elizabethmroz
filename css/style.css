@@ -45,18 +45,18 @@ nav > ul, .logo {
 	line-height: 25px;
 	margin: 4px 0 0 60px;
 	text-transform: uppercase;
-	width: 30%;
+	width: 26%;
 }
 
 .logo h4 {
 	font-weight: 400;
-	font-size: 25px;
+	font-size: 28px;
 }
 
 nav ul {
 	float: center;
 	list-style: none;
-	margin-right: 40px;
+	margin-right: 60px;
 	position: relative;
 }
 
@@ -80,8 +80,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: rgb(165, 18, 38);
-	border-bottom: 3px solid rgb(112, 94, 96);
+	color: rgb(199, 17, 41);
+	border-bottom: 3px solid rgb(175, 175, 175);
 }
 
 #a-content {border-bottom: none;}
@@ -89,8 +89,8 @@ nav ul li a:hover {
 
 nav ul ul {
 	position: absolute;
-	top: 55px;
-	border-top: 3px solid rgb(255, 0, 34);
+	top: 40px;
+	border-top: 3px solid rgb(175, 175, 175);
 	opacity: 0;
 	visibility: hidden;
 	transition: top .3s;
@@ -126,7 +126,7 @@ nav ul ul li a {
 }
 
 nav ul ul li a:hover {
-	color: rgb(185, 13, 36);
+	color: rgb(199, 17, 41);
 	box-shadow: none;
 	border-bottom: 3px solid rgba(221, 21, 71, 0);
 }
@@ -151,7 +151,7 @@ nav ul ul ul li {
 	font-size: 22px;
 	font-weight: 600;
 	color: black;
-	margin: 0 7px;
+	margin: 0 9px;
 }
 
 
@@ -170,10 +170,22 @@ nav ul ul ul li {
 }
 
 
-@media screen and (max-width:1126px) {
+@media screen and (max-width:1157px) {
+	.logo {
+		width: 24%;
+	}
 	.logo h4 {
-		font-weight: 300;
-		font-size: 28px;
+		font-weight: 400;
+		font-size: 26px;
+	}
+	nav ul {
+		float: center;
+		list-style: none;
+		margin-right: 40px;
+		position: relative;
+	}
+	.social-nav a {
+		margin: 0 5px;
 	}
 }
 
@@ -233,8 +245,9 @@ nav ul ul ul li {
 	nav ul ul li a {
 		font-size: 16px;
 		color:black;
-		letter-spacing: 2px;
 		text-transform: capitalize;
+		letter-spacing: 0;
+		font-weight: 600;
 	}
 
 	nav ul ul ul li {
@@ -257,11 +270,10 @@ nav ul ul ul li {
 
 	#show2 {
 		display: block;
-		font-weight: 500;
 		transition: all .3s ease;
 		padding: 7px 0 5px 40px;
 		text-transform: capitalize;
-		letter-spacing: 2px;
+		font-weight: 600;
 	}
 
 	#show2 i {
@@ -454,7 +466,7 @@ nav ul ul ul li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 760px;
+	height: 770px;
 }
 
 .Portada2 {
@@ -462,7 +474,7 @@ nav ul ul ul li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 760px;
+	height: 770px;
 }
 
 .videoPortada {
