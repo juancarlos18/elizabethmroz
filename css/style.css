@@ -420,9 +420,9 @@ nav ul ul ul li {
 }
 
 .modal-dialog.em-norway .modal-content .modal-body h1 {
-	font-weight: 500;
-	font-size: 20px;
-	color: rgb(230, 45, 45);
+	font-weight: 600;
+	font-size: 18px;
+	color: black;
 	text-transform: capitalize;
 }
 
@@ -940,10 +940,10 @@ nav ul ul ul li {
 
 #NorwayPlace .section-title h2 {
 	margin: 40px 0;
-	font-weight: 400;
-	letter-spacing: 3px;
+	font-weight: 500;
+	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: rgb(34, 34, 34);
+	color: black;
 }
 
 
@@ -1067,14 +1067,14 @@ nav ul ul ul li {
 }
 
 .post-slider i{
-	color: white;
+	color: rgb(116, 116, 116);
 	font-size: 80px !important;
 	transition: all .3s ease;
 	margin: 0 20px;
 }
 
 .post-slider i:hover{
-	color: rgb(255, 0, 0);
+	color: black;
 }
 
 @media screen and (max-width: 1040px){
@@ -1096,7 +1096,7 @@ nav ul ul ul li {
 	}
 }
 
-.post-slider .post-wrapper{
+.post-slider .post-wrapper {
 	width: 75%;
 	height: auto;
 	margin: 0px auto;
@@ -1104,15 +1104,15 @@ nav ul ul ul li {
 	padding: 10px 0px 10px 0px;
 }
 
-.post-slider .post-wrapper .post{
+.post-slider .post-wrapper .post {
 	width: 30px;
 	height: auto;
 	margin: 0px 10px;
 	display: inline-block;
-	box-shadow: 0 0 10px rgb(0, 0, 0);
+	/*box-shadow: 0 0 10px rgb(0, 0, 0);*/
 }
 
-.post-slider .post-wrapper .post span{
+.post-slider .post-wrapper .post span {
 	position: absolute;
 	font-weight: 500;
 	font-size: 35px;
@@ -1120,30 +1120,30 @@ nav ul ul ul li {
 	text-align: justify;
 	margin-left: 30px;
 	margin-top: 20px;
-	background-color: rgba(0, 0, 0, 0.822);
+	background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.425));
+	border-radius: 0 20px 20px 0;
 }
 
-.post-slider .post-wrapper .post span p{
+.post-slider .post-wrapper .post span p {
 	margin: 0 15px;
 }
 
-@media screen and (max-width: 576px)
-{
-	.post-slider .post-wrapper .post span{
+@media screen and (max-width: 576px) {
+	.post-slider .post-wrapper .post span {
 		font-size: 20px;
 	}
 }
 
-.post-slider .post-wrapper .post video{
+.post-slider .post-wrapper .post video {
 	outline: none;
 }
 
-.post-slider .post-wrapper .post .slider-image{
+.post-slider .post-wrapper .post .slider-image {
 	width: 100%;
 	height: 100%;
 }
 
-.post-slider .prev{
+.post-slider .prev {
 	position: absolute;
 	top: 50%;
 	left: 10px;
@@ -1151,7 +1151,7 @@ nav ul ul ul li {
 	cursor: pointer;
 }
 
-.post-slider .next{
+.post-slider .next {
 	position: absolute;
 	top: 50%;
 	right: 10px;
@@ -1160,8 +1160,7 @@ nav ul ul ul li {
 }
 
 
-.goMedia
-{
+.goMedia {
 	overflow: hidden;
 	position: relative;
 	transition: all 0.3s ease 0s;
@@ -1173,8 +1172,7 @@ nav ul ul ul li {
 	height: 50px;
 }
 
-.goMedia:hover
-{
+.goMedia:hover {
 	background-color: #731273;
 	color: white;
 }
@@ -1202,28 +1200,20 @@ nav ul ul ul li {
 
 /* -Pictures Gallery- */
 
-
-.title-gallery h1 {
-	font-size: 40px;
-	font-weight: 400;
-	color: white;
-	text-shadow: 0 0 10px rgba(255, 167, 167, 0.61);
-	text-transform: uppercase;
-}
-
 .title-gallery h2 {
 	font-size: 30px;
-	font-weight: 400;
-	color: white;
-	text-shadow: 0 0 10px rgba(143, 132, 132, 0.61);
+	font-weight: 500;
+	color: black;
+	/*text-shadow: 0 0 10px rgba(143, 132, 132, 0.61);*/
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	margin: 100px 0 40px 0;
 }
 
 .title-gallery p {
 	font-size: 18px;
 	font-weight: 400;
-	color: rgba(255, 255, 255, 0.808);
+	color: black;
 }
 
 .work {
