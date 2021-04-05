@@ -890,31 +890,6 @@ nav ul ul ul li {
 	margin: 20px auto 1.25rem auto;
 }
 
-.button-suscribe-follow a h3 b {
-	font-weight: 600;
-	font-size: 18px;
-	transition: all .4s ease;
-}
-
-.button-suscribe-follow a:hover h3 b {
-	letter-spacing: 4px;
-}
-
-.button-suscribe-follow a h3 span {
-	font-weight: 700;
-	margin-left: 10px;
-}
-
-
-.button-suscribe-follow a {
-	color:  rgb(0, 0, 0);
-}
-
-.button-suscribe-follow:hover a {
-	text-decoration: none;
-	color: rgb(235, 41, 50);
-}
-
 
 #Channel .items {
 	display: flex;
