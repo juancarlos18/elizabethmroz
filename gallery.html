@@ -32,32 +32,18 @@
     </head>
 
     
-    <body style="background-color: black">
+    <body style="background-color: rgb(224, 224, 224);">
         <!-- Nav bar -->
             <header>
                 <nav class="navbar-fixed-top">
-                    <div class="logo"><h4>Elizabeth <strong>Mroz</strong></h4></div>
+                    <div class="logo"><a href="index.html" style="text-decoration: none; color: black;"><h4>Elizabeth <strong>Mroz</strong></h4></a></div>
                     <ul class="nav-items">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Me</a></li>
-                        <li>
-                            <label for="btn-1" id="show1">Content</label>
-                            <a href="index.html" id="a-content">Content</a>
-                            <input type="checkbox" id="btn-1">
-                            <ul>
-                                <li><a href="index.html">Norway</a></li>
-                                <li>
-                                    <label for="btn-2" id="show2">Media <i class="fas fa-chevron-down"></i></label>
-                                    <a href="index.html">Media </a>
-                                    <input type="checkbox" id="btn-2">
-                                    <!-- <ul>
-                                        <li><a href="gallery.html">My gallery</a></li>
-                                    </ul> -->
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html">Channel</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <div class="social-nav">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-tiktok"></i></a>
+                        </div>
                     </ul>
             
                     <div class="burger">
@@ -117,8 +103,7 @@
 
         <!-- Portada -->
             <section class="text-center">
-                <div class="Portada2">
-                </div>
+                <div class="Portada2"></div>
             </section>
         <!-- Portada -->
 
@@ -126,14 +111,12 @@
 
 
         <!-- Slider Section 1 -->
-            <section class="text-center" id="slider">
-                    <br><br><br><br>
-                    <div class="cta-div text-center title-gallery">
-                        <h2>My gallery</h2>
+            <section class="text-center">
+                    <div class="title-gallery">
+                        <h2>Mi galería</h2>
                     </div>
-                    <div class="container text-center title-gallery">
-                        <p>Esta es una sección de los bellos lugares a los que he visitado en Noruega.
-                        </p>
+                    <div class="container title-gallery">
+                        <p>Esta es una sección de los bellos lugares a los que he visitado en Noruega.</p>
                     </div>
             </section>
         <!-- Slider Section 1 -->
@@ -167,7 +150,7 @@
             </section>
         <!-- Videos Slide -->
 
-
+        
 
 
 
@@ -258,189 +241,164 @@
                                 </div>
                             </div>
                         </div>
-                        <span id="dots"></span>
-                        <span id="more">
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v7.jpg">
-                                        <img src="Photos/v7.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 7</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v7.jpg">
+                                    <img src="Photos/v7.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 7</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v8.jpg">
-                                        <img src="Photos/v8.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 8</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v8.jpg">
+                                    <img src="Photos/v8.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 8</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v9.jpg">
-                                        <img src="Photos/v9.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 9</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v9.jpg">
+                                    <img src="Photos/v9.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 9</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v10.jpg">
-                                        <img src="Photos/v10.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 10</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v10.jpg">
+                                    <img src="Photos/v10.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 10</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v11.jpg">
-                                        <img src="Photos/v11.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 11</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v11.jpg">
+                                    <img src="Photos/v11.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 11</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v12.jpg">
-                                        <img src="Photos/v12.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 12</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v12.jpg">
+                                    <img src="Photos/v12.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 12</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v13.jpg">
-                                        <img src="Photos/v13.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 13</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v13.jpg">
+                                    <img src="Photos/v13.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 13</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v14.jpg">
-                                        <img src="Photos/v14.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 14</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v14.jpg">
+                                    <img src="Photos/v14.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 14</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v15.jpg">
-                                        <img src="Photos/v15.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2>Oslo 15</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v15.jpg">
+                                    <img src="Photos/v15.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 15</h2>
+                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v16.jpg">
-                                        <img src="Photos/v16.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2 style="color: rgba(255, 255, 255, 0);">. </h2>
-                                        <h2 style="color: rgba(255, 255, 255, 0);">. </h2>
-                                        <h2>Oslo 16</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v16.jpg">
+                                    <img src="Photos/v16.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 16</h2>
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v17.jpg">
-                                        <img src="Photos/v17.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2 style="color: rgba(255, 255, 255, 0);">. </h2>
-                                        <h2 style="color: rgba(255, 255, 255, 0);">. </h2>
-                                        <h2>Oslo 17</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v17.jpg">
+                                    <img src="Photos/v17.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 17</h2>
                                 </div>
                             </div>
-                            <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                                <div class="img-wrapper">
-                                    <a href="Photos/v18.jpg">
-                                        <img src="Photos/v18.jpg" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="details">
-                                    <div class="detcont">
-                                        <h2 style="color: rgba(255, 255, 255, 0);">. </h2>
-                                        <h2 style="color: rgba(255, 255, 255, 0);">. </h2>
-                                        <h2>Oslo 18</h2>
-                                        <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                    </div>
+                        </div>
+                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                            <div class="img-wrapper">
+                                <a href="Photos/v18.jpg">
+                                    <img src="Photos/v18.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <div class="detcont">
+                                    <h2>Oslo 18</h2>
                                 </div>
                             </div>
-                        </span>
-                        <button onclick="read_more_less()" id="btn_mp">See more</button>
+                        </div>
                     </div>
-                </div><br><br><br>
+                </div><br>
             </section>
         <!-- Pictures -->
 
-
-
-
-        
-        <!-- End -->
-            <section>
-                <div class="container text-center title-gallery">
-                    <br><br><br><br>
-                    <h2>♡</h2>
-                </div>
-            </section>
-        <!-- End -->
 
 
         <!-- Redes Sociales -->
