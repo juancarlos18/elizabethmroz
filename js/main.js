@@ -107,7 +107,7 @@ navSlide();
 	
 
 
-
+	/*
 	function read_more_less() {
 		var photo = document.getElementById('dots');
 		var morePhoto = document.getElementById('more');
@@ -122,7 +122,7 @@ navSlide();
 			morePhoto.style.display = "inline";
 			btnMP.innerHTML = "See less";
 		}
-	}
+	}*/
 
 
 	
