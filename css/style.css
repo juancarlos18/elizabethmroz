@@ -716,15 +716,15 @@ nav ul ul ul li {
 }
 
 #MePlay .box-mp1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/432505c6-1adb-4663-85d8-a622b99cd6d7.jpg);
-}
-
-#MePlay .box-mp2 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/v5.jpg);
 }
 
+#MePlay .box-mp2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_refuge.jpg);
+}
+
 #MePlay .box-mp3 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/v18.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_job.jpg);
 }
 
 #MePlay a {
@@ -804,7 +804,8 @@ nav ul ul ul li {
 }
 
 #Channel .perfil-y p {
-	font-weight: 500;
+	margin-top: 30px;
+	font-weight: 600;
 	font-size: 20px;
 	color: black;
 }
@@ -826,7 +827,7 @@ nav ul ul ul li {
 	height: 220px;
 	border-radius: 50%;
 	position: relative;
-	border: 5px solid rgb(182, 145, 145);
+	border: 5px solid rgb(199, 199, 199);
     box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
 	margin: 40px auto 1.25rem auto;
 }
