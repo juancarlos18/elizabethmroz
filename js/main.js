@@ -20,9 +20,27 @@ jQuery(document).ready(function($){
 	});*/
 
 
+	var swiper = new Swiper('.swiper-container', {
+		effect: 'coverflow',
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		coverflowEffect: {
+		  rotate: 20,
+		  stretch: 0,
+		  depth: 200,
+		  modifier: 1,
+		  slideShadows: true,
+		},
+		pagination: {
+		  el: '.swiper-pagination',
+		},
+	});
 
+
+/*
 	$('.post-wrapper').slick({
-	  slidesToShow: 1,/**/
+	  slidesToShow: 1,//
 	  slidesToScroll: 1,
 	  autoplay: false,
 	  autoplaySpeed: 2000,
@@ -32,8 +50,8 @@ jQuery(document).ready(function($){
 	    {
 	      breakpoint: 1024,
 	      settings: {
-	        slidesToShow: 1,/**/
-	        slidesToScroll: 1,/**/
+	        slidesToShow: 1,//
+	        slidesToScroll: 1,//
 	        infinite: true,
 	        dots: true
 	      }
@@ -57,7 +75,7 @@ jQuery(document).ready(function($){
 	    // instead of a settings object
 	  ]
 	});
-
+*/
 
 
 	$('.work').magnificPopup({
@@ -104,29 +122,3 @@ navSlide();
 	var v = document.getElementsByTagName("video");
 	v.play();
 	v.muted = true;
-	
-
-
-	/*
-	function read_more_less() {
-		var photo = document.getElementById('dots');
-		var morePhoto = document.getElementById('more');
-		var btnMP = document.getElementById('btn_mp');
-
-		if (photo.style.display === 'none') {
-			photo.style.display = 'inline';
-			morePhoto.style.display = 'none';
-			btnMP.innerHTML = "See more";
-		} else {
-			photo.style.display = "none";
-			morePhoto.style.display = "inline";
-			btnMP.innerHTML = "See less";
-		}
-	}*/
-
-
-	
-
-
-
-	
