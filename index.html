@@ -5,6 +5,7 @@
         <link rel="shortcut icon" type="image/x-ico" href="image/em.ico">
         <title>Home : Elizabeth</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 
 
@@ -36,25 +37,13 @@
     <body>
         <header>
             <nav class="navbar-fixed-top">
-                <div class="logo"><h4>Elizabeth <strong>Mroz</strong></h4></div>
+                <div class="logo"></div>
                 <ul class="nav-items">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="#Me">Sobre mí</a></li>
-                    <li>
-                        <label for="btn-1" id="show1">Contenido</label>
-                        <a href="#MePlay" id="a-content">Contenido</a>
-                        <input type="checkbox" id="btn-1">
-                        <ul>
-                            <li><a href="#Norway">Noruega</a></li>
-                            <li>
-                                <label for="btn-2" id="show2">Galeria</label>
-                                <a href="#NorwayPlace">Galeria </a>
-                                <input type="checkbox" id="btn-2">
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#Channel">Canal</a></li>
-                    <li><a href="#Contact">Contacto</a></li>
+                    <li><i class="fas fa-home"></i><a href="#Home">Inicio</a></li>
+                    <li><i class="fas fa-female"></i><a href="#Me">Sobre mí</a></li>
+                    <li><i class="fas fa-play-circle"></i><a href="#MePlay">Contenido</a></li>
+                    <li><i class="fab fa-youtube"></i><a href="#Channel">Canal</a></li>
+                    <li><a href="#Contact" id="nav-ct">Contacto</a></li>
 
                     <div class="social-nav">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -73,29 +62,14 @@
         </header>
 
 
-        <!-- Modal Shop
-            <div class="modal" tabindex="-1" role="dialog" id="comunicado-shop">
-                <div class="modal-dialog em-shop modal-sm" role="document">
-                <div class="modal-content">
-                    <div class="modal-body text-center">
-                        <h4>Comunicado</h4><br>
-                        <img src="SVG/undraw_jewelry_iima.svg" alt="">
-                        <p>La sección de compras está en desarrollo. Pronto estará disponible. Gracias! 🤗</p><br>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
-                    </div>
-                </div>
-                </div>
+        <section id="Home" class="text-center">
+            <div class="Portada">
+                <span></span>
+                <h1 class="cover-name"></h1>
             </div>
-        Modal Shop -->
-
-
-
-
-        <section class="text-center">
-            <div class="Portada"></div>
         </section>
 
-        
+
         <section class="intro">
             <div class="container">
                 <div class="text-center">
@@ -105,19 +79,21 @@
                     <div class="box-ip1"></div>
                     <div class="box-ip2"></div>
                 </div>
+                <div class="text-center"><a><button data-target="#norway-modal" data-toggle="modal"></button></a></div>
             </div>
         </section>
 
 
         <section id="Me">
             <div class="container">
-                <div class="photo-circle"></div>
-                <div class="row">
-                    <p> Hola, soy <b>Elizabeth</b>, una peruana que reside en Noruega. <br><br>
-                        En base a mis años de vida, te comparto la experiencia de viajar a Noruega.<br>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="photo-circle"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p> <b>Hola, soy Elizabeth</b> <br>una peruana que reside en Noruega. <br><br>
+                        En base a mis años de vida en este país, te comparto la experiencia de viajar, trabajar y vivir en Noruega.<br>
                         Conoce todo lo necesario para formar una vida en este hermoso país.</p>
                 </div>
-                <div><a><button data-target="#norway-modal" data-toggle="modal"></button></a></div>
             </div>
         </section>
 
@@ -149,7 +125,7 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="">
+                                    <div>
                                         <h1> Historia</h1>
                                         <p>La historia de noruega se remota a la Alta Edad Media, que coincide con la irrupción, a finales del siglo Vlll, de los navegantes Vikingos en la historia europea a través de actividades comerciales, de saqueo y de colonización.</p>
                                     </div>
@@ -158,7 +134,7 @@
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="">
+                                    <div>
                                         <h1> Cultura</h1>
                                         <p>La Cultura rural noruega de características únicas, ha resultado de los escasos recursos disponibles, del duro clima reinante y de Antiguas Leyes de propiedad noruegas que sustentan un carácter único visible en ese país hoy. Esta característica resultó de un fuerte movimiento nacionalista románico noruego en el siglo XVlll que está presente hoy en día en su idioma y medios.</p>
                                     </div>
@@ -178,9 +154,7 @@
 
         <section id="MePlay">
             <div class="container latest-news-wrap">
-                <div>
-                    <div class="photo-circle"></div>
-                </div>
+                <div><div class="photo-circle"></div></div>
 
                 <div class="text-center">
                     <p>Puedes encontrar en mi canal de <b>Youtube</b> 
@@ -223,81 +197,86 @@
                 </div>
                 <div class="col-md-1 col-sm-6 col-xs-12"></div>
                 <div class="col-md-7 col-sm-6 col-xs-12">
-                    <span>Videos recientes</span>
+                    <span></span>
                     <div class="items">
                         <div class="item video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/GB70T8Yb7H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <div class="item video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Nnul_IGbJro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <div class="item video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/S4N_eSpz8Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <div class="item video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/kdO-4TuOJjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <div class="item video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/2dq64siW7NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    </div><br><br>
+                    </div>
                 </div>
-                <div class="btn-g">
-                    <a href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q">Visitar canal</a>
+            </div>
+        </section>
+
+        
+        <section id="NorwayPlace">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="section-title"><br><br>
+                            <h2>Fotos</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                        <div class="img-wrapper">
+                            <img src="image/Photo1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="detcont">
+                                <h2>Oslo</h2>
+                                <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                        <div class="img-wrapper">
+                            <img src="Photos/6ef1ce60-8234-40e1-8491-a6096471861a.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="detcont">
+                                <h2>Trondheim</h2>
+                                <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
+                        <div class="img-wrapper">
+                            <img src="Photos/2bedc1f2-3b6d-47b8-a944-3b8895ff31e2.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="detcont">
+                                <h2>Trondheim</h2>
+                                <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
+                            </div>
+                        </div>
+                    </div>
                 </div><br>
+                <div class="btn-g"><a><button data-target="#info-gallery" data-toggle="modal">Ver más</button></a></div>
+                
+                <!-- <div class="btn-g">
+                    <a href="gallery.html">Ver más</a>
+                </div><br><br> -->
             </div>
         </section>
 
 
-
-
-
-
-        <!-- Photos -->
-            <section id="NorwayPlace">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <div class="section-title"><br><br>
-                                <h2>Fotos</h2>
-                            </div>
-                        </div>
+            <div class="modal fade" id="info-gallery" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog em-gallery modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h4>Comunicado</h4><br>
+                        <img src="image/undraw_Camera_re_cnp4.svg" alt="">
+                        <p>La sección de fotos está en desarrollo. Pronto estará disponible. Gracias! 🤗</p><br>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
                     </div>
-                    <div class="row">
-                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="image/Photo1.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="detcont">
-                                    <h2>Oslo</h2>
-                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="Photos/6ef1ce60-8234-40e1-8491-a6096471861a.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="detcont">
-                                    <h2>Trondheim</h2>
-                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="no-gutters col-md-4 col-sm-6 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="Photos/2bedc1f2-3b6d-47b8-a944-3b8895ff31e2.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="detcont">
-                                    <h2>Trondheim</h2>
-                                    <!-- <p>Estatua de _______ de la libreria de Oslo.</p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div><br><br>
-                    
-                    <div class="btn-g">
-                        <a href="gallery.html">Ver más</a>
-                    </div><br><br>
                 </div>
-            </section>
-
-        <!-- Photos -->
+                </div>
+            </div>
 
 
 
@@ -313,7 +292,7 @@
                         <div class="logo-c2"></div>
                     </div>
                     <div class="social-media">
-                        <div>Redes sociales</div><br>
+                        <div><p>Contáctame a través de mis redes sociales</p></div><br>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
                         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href=""><i class="fab fa-youtube"></i></a></li>
@@ -340,9 +319,9 @@
 
 
         <script src="js/jquery.ripples-min.js" type="text/javascript"></script>
-        <script src="js/typed.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
-
+        <script src="js/jquery.hislide.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 
