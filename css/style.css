@@ -620,6 +620,7 @@ nav ul li a:hover {
 	height: 220px;
 	border-radius: 50%;
 	position: relative;
+	border: 5px solid white;
     box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
 	margin: 40px auto 1.25rem auto;
 }
@@ -730,10 +731,10 @@ nav ul li a:hover {
 }
 
 #Channel .section-title-watch h2 font{
-	color: #ff3145;
+	color: white;
 	text-shadow: none;
 	font-weight: 700;
-	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.548);
+	text-shadow: 0 5px 10px rgb(58, 0, 0);
 }
 
 @media screen and (max-width: 390px) {
@@ -746,7 +747,7 @@ nav ul li a:hover {
 }
 
 #Channel span::before {
-	content: 'Videos recientes ★';
+	content: 'Videos recientes';
 }
 #Channel span {
 	margin: 20px 0;
