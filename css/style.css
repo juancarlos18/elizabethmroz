@@ -620,7 +620,7 @@ nav ul li a:hover {
 	height: 220px;
 	border-radius: 50%;
 	position: relative;
-	border: 5px solid white;
+	border: 5px solid rgb(182, 202, 190);
     box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
 	margin: 40px auto 1.25rem auto;
 }
