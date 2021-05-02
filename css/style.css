@@ -288,9 +288,6 @@ nav ul li a:hover {
 }
 
 /**/
-.modal-dialog.em-mp1 .modal-content,
-.modal-dialog.em-mp2 .modal-content,
-.modal-dialog.em-mp3 .modal-content,
 .modal-dialog.em-gallery .modal-content {
 	background-color: white;
 	padding: 0 20px;
@@ -328,11 +325,25 @@ nav ul li a:hover {
 
 
 /**/
+.modal-dialog.em-mp1 .modal-content {
+	background-color: white;
+	padding: 0 20px;
+	border-radius: 15px;
+	text-align: center;
+}
 .modal-dialog.em-mp1 .modal-content .modal-body h4,
 .modal-dialog.em-mp2 .modal-content .modal-body h4,
 .modal-dialog.em-mp3 .modal-content .modal-body h4 {
 	font-weight: 800;
 	font-size: 17px;
+	color: #DC3C4D;
+}
+
+.modal-dialog.em-mp1 .modal-content .modal-body span,
+.modal-dialog.em-mp2 .modal-content .modal-body span,
+.modal-dialog.em-mp3 .modal-content .modal-body span {
+	font-weight: 700;
+	font-size: 14px;
 	color: black;
 }
 
@@ -340,10 +351,9 @@ nav ul li a:hover {
 .modal-dialog.em-mp1 .modal-content .modal-body a {
 	border-radius: 10px;
 	box-shadow: 0px 3px 20px #f7e2ff;
-	position: relative;
 	height: 118px;
-	padding: 4px 0;
 	display: block;
+	padding: 4px 0;
 	margin-bottom: 20px;
 }
 
