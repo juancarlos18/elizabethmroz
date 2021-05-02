@@ -288,6 +288,9 @@ nav ul li a:hover {
 }
 
 /**/
+.modal-dialog.em-mp1 .modal-content,
+.modal-dialog.em-mp2 .modal-content,
+.modal-dialog.em-mp3 .modal-content,
 .modal-dialog.em-gallery .modal-content {
 	background-color: white;
 	padding: 0 20px;
@@ -312,6 +315,48 @@ nav ul li a:hover {
 }
 
 .modal-dialog.em-gallery .modal-content .modal-body button {
+	background-color: #DC3C4D;
+	color: white;
+	font-size: 13px;
+	font-weight: 400;
+	outline: none;
+	border: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+
+/**/
+.modal-dialog.em-mp1 .modal-content .modal-body h4,
+.modal-dialog.em-mp2 .modal-content .modal-body h4,
+.modal-dialog.em-mp3 .modal-content .modal-body h4 {
+	font-weight: 800;
+	font-size: 17px;
+	color: black;
+}
+
+.modal-dialog.em-mp1 .modal-content .modal-body a,
+.modal-dialog.em-mp1 .modal-content .modal-body a {
+	border-radius: 10px;
+	box-shadow: 0px 3px 20px #f7e2ff;
+	position: relative;
+	height: 118px;
+	padding: 4px 0;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.modal-dialog.em-mp1 .modal-content .modal-body a.mpv1 {
+	background-image: url(../image/img_tramite.png);
+}
+.modal-dialog.em-mp1 .modal-content .modal-body a.mpv2 {
+	background-image: url(../image/img_idioma.png);
+}
+
+.modal-dialog.em-mp1 .modal-content .modal-body button,
+.modal-dialog.em-mp2 .modal-content .modal-body button,
+.modal-dialog.em-mp3 .modal-content .modal-body button {
 	background-color: #DC3C4D;
 	color: white;
 	font-size: 13px;
@@ -546,7 +591,6 @@ nav ul li a:hover {
 #Me {
 	padding: 80px 0;
 }
-
 #Me .photo-circle {
 	background-image: url(../image/photo_me.PNG);
 	background-size: cover;
@@ -558,7 +602,6 @@ nav ul li a:hover {
     box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
 	margin: 0 auto 1.25rem auto;
 }
-
 #Me p {
 	font-size: 17px;
 	font-weight: 500;
@@ -566,7 +609,6 @@ nav ul li a:hover {
 	color: black;
 	padding: 0 20px;
 }
-
 #Me b {
 	font-size: 24px;
 }
@@ -646,7 +688,7 @@ nav ul li a:hover {
 #MePlay .box-mp2 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_refuge.jpg);}
 #MePlay .box-mp3 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_job.jpg);}
 
-#MePlay a {
+#MePlay a button {
 	padding: 8px 12px;
 	background-color: rgba(0, 0, 0, 0.521);
 	border: solid 2px white;
@@ -658,11 +700,10 @@ nav ul li a:hover {
 	text-transform: capitalize;
 	letter-spacing: 2px;
 	position: relative;
-	top: 45%;
-	left: 0;
+	top: 40%;
 }
 
-#MePlay a:hover {
+#MePlay a button:hover {
 	background-color: white;
 	color: black;
 	font-weight: 500;
