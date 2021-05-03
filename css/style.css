@@ -288,7 +288,8 @@ nav ul li a:hover {
 }
 
 /**/
-.modal-dialog.em-gallery .modal-content {
+.modal-dialog.em-gallery .modal-content,
+.modal-dialog.em-mp .modal-content {
 	background-color: white;
 	padding: 0 20px;
 	border-radius: 15px;
@@ -297,9 +298,10 @@ nav ul li a:hover {
 	width: 90%;
 	margin: 20px 0;
 }
+.modal-dialog.em-mp .modal-content .modal-body h4,
 .modal-dialog.em-gallery .modal-content .modal-body h4 {
-	font-weight: 400;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 16px;
 	color: black;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -325,48 +327,37 @@ nav ul li a:hover {
 
 
 /**/
-.modal-dialog.em-mp1 .modal-content {
-	background-color: white;
-	padding: 0 20px;
-	border-radius: 15px;
-	text-align: center;
-}
-.modal-dialog.em-mp1 .modal-content .modal-body h4,
-.modal-dialog.em-mp2 .modal-content .modal-body h4,
-.modal-dialog.em-mp3 .modal-content .modal-body h4 {
-	font-weight: 800;
-	font-size: 17px;
-	color: #DC3C4D;
-}
-
-.modal-dialog.em-mp1 .modal-content .modal-body span,
-.modal-dialog.em-mp2 .modal-content .modal-body span,
-.modal-dialog.em-mp3 .modal-content .modal-body span {
-	font-weight: 700;
+.modal-dialog.em-mp .modal-content .modal-body span {
+	font-weight: 500;
 	font-size: 14px;
-	color: black;
+	color: white;
+	background-color: #303952;
+	/*background-color: #DC3C4D;*/
+	display: block;
+	border-radius: 5px 5px 0 0;
 }
 
-.modal-dialog.em-mp1 .modal-content .modal-body a,
-.modal-dialog.em-mp1 .modal-content .modal-body a {
-	border-radius: 10px;
-	box-shadow: 0px 3px 20px #f7e2ff;
+.modal-dialog.em-mp .modal-content .modal-body a {
+	border-radius: 0 0 5px 5px;
 	height: 118px;
 	display: block;
 	padding: 4px 0;
 	margin-bottom: 20px;
+	transition: .3s ease;
+	border: solid 2px #303952;
+}
+.modal-dialog.em-mp .modal-content .modal-body a:hover {
+	box-shadow: 0px 3px 10px #3039528c;
 }
 
-.modal-dialog.em-mp1 .modal-content .modal-body a.mpv1 {
+.modal-dialog.em-mp .modal-content .modal-body a.mpv1 {
 	background-image: url(../image/img_tramite.png);
 }
-.modal-dialog.em-mp1 .modal-content .modal-body a.mpv2 {
+.modal-dialog.em-mp .modal-content .modal-body a.mpv2 {
 	background-image: url(../image/img_idioma.png);
 }
 
-.modal-dialog.em-mp1 .modal-content .modal-body button,
-.modal-dialog.em-mp2 .modal-content .modal-body button,
-.modal-dialog.em-mp3 .modal-content .modal-body button {
+.modal-dialog.em-mp .modal-content .modal-body button {
 	background-color: #DC3C4D;
 	color: white;
 	font-size: 13px;
@@ -383,26 +374,12 @@ nav ul li a:hover {
 
 /* Video */
 #Home .Portada {
-	background-image: url(../image/cover_home.PNG);
+	background-image: url(../image/cover_home1.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
 	height: 700px;
 	position: relative;
-}
-
-#Home .Portada span::before {
-	content: 'Bienvenido !';
-}
-#Home .Portada span {
-	color: black;
-	font-size: 50px;
-	font-weight: 800;
-	width: 500px;
-	height: 60px;
-	position: absolute;
-	top: 30%;
-	left: 0;
 }
 
 #Home .Portada .cover-name::before {
@@ -420,6 +397,7 @@ nav ul li a:hover {
 	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-shadow: 0 5px 10px rgb(46, 0, 0);
 }
 
 .videoPortada {
@@ -526,7 +504,7 @@ nav ul li a:hover {
 }
 
 .intro .intro-text::before {
-	content: 'conoce todo sobre Noruega';
+	content: 'conoce acerca Noruega';
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -539,6 +517,7 @@ nav ul li a:hover {
 	display: block;
 	text-align: center;
 	margin: 20px 0;
+	position: relative;
 }
 
 .intro .box-ip1,
@@ -552,6 +531,7 @@ nav ul li a:hover {
 	text-align: center;
 	border-radius: 5px;
 	box-shadow: 0px 3px 20px #c01627c7;
+	position: relative;
 }
 
 .intro .box-ip1 {background-image: url(../image/Intro\ 1.JPG);}
@@ -562,6 +542,22 @@ nav ul li a:hover {
 	.intro .box-ip2 {
 		width: 310px;
 	}
+}
+
+.box-ip .box-ip1 .box-ip1-desc::before{
+	content: 'Parlamento de Oslo';
+}
+.box-ip .box-ip1 .box-ip1-desc,
+.box-ip .box-ip2 .box-ip2-desc {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.76));
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	border-radius: 0 0 5px 5px;
 }
 
 .intro a {
@@ -660,7 +656,7 @@ nav ul li a:hover {
 	height: 220px;
 	border-radius: 50%;
 	position: relative;
-	border: 5px solid rgb(203, 228, 206);
+	border: 5px solid rgb(206, 206, 206);
     box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
 	margin: 40px auto 1.25rem auto;
 }
