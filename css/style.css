@@ -1410,6 +1410,10 @@ nav ul li a:hover {
 		height: 188px;
 		object-fit: cover;
 	}
+
+	.logo-load::before {
+		content: 'E M';
+	}
 }
 
 
