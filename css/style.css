@@ -22,6 +22,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+	z-index: 0;
 }
 
 nav::after {
