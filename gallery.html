@@ -27,7 +27,12 @@
     
 
     <body>
-        <header>
+        <div class="loader-wrapper">
+            <div class="logo-load"></div>
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script>$(window).on("load",function(){$(".loader-wrapper").fadeOut("slow");});</script>
+        <!-- <header>
             <nav class="navbar-fixed-top">
                 <div class="logo"></div>
                 <ul class="nav-items">
@@ -46,8 +51,8 @@
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-            </nav>
-        </header>
+            </nav> 
+        </header> -->
 
         <!-- Add Pagination
         <section class="swiper-section">
@@ -62,6 +67,20 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section> -->
+
+        <div class="container-btn-g">
+            <input type="checkbox" id="btn-more">
+            <div class="social-media-i">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+                <a href="https://www.facebook.com/ElizabethMrozOficial"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/elizabetmroz/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@elizabethmrz1?lang=es"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="btn-more">
+                <label for="btn-more" class="icon-more2"></label>
+            </div>
+        </div>
 
 
         <section class="gallery-background">
@@ -85,13 +104,13 @@
                         <img src="image/Marco1.png" class="img-responsive">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/v1.jpg" class="img-responsive">
+                        <img src="Photos/IMG_1493.JPG" class="img-responsive">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/v6.jpg" class="img-responsive">
+                        <img src="Photos/v5.jpg" class="img-responsive">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/v8.jpg" class="img-responsive">
+                        <img src="Photos/IMG_1492.JPG" class="img-responsive">
                     </div>
                     <div class="gallery-item">
                         <img src="Photos/v9.jpg" class="img-responsive">
@@ -100,7 +119,7 @@
                         <img src="image/Marco1.png" class="img-responsive">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/v10.jpg" class="img-responsive">
+                        <img src="Photos/IMG_1524.JPG" class="img-responsive">
                     </div>
                     <div class="gallery-item">
                         <img src="Photos/v11.jpg" class="img-responsive">
@@ -109,35 +128,19 @@
                         <img src="image/Marco1.png" class="img-responsive">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/v4.jpg" class="img-responsive">
+                        <img src="Photos/v7.jpg" class="img-responsive">
                     </div>
                     <div class="gallery-item">
                         <img src="Photos/v13.jpg" class="img-responsive">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/v5.jpg" class="img-responsive">
+                        <img src="Photos/IMG_1504.JPG" class="img-responsive">
                     </div>
                     <div class="gallery-item">
                         <img src="Photos/v12.jpg" class="img-responsive">
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <section id="Contact">
-            <div class="container">
-                <div class="row">
-                    <div class="logo-c"></div>
-                    <div class="logo-c2"></div>
-                </div>
-                <div class="social-media">
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                    <li><a href=""><i class="fab fa-tiktok"></i></a></li>
-                </div>
-            </div><br>
         </section>
 
 
