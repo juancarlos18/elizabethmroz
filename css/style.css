@@ -1666,15 +1666,15 @@ nav ul li a:hover {
 
 @keyframes loader {
 	0% { transform: scale(1.6); -webkit-transform: scale(1.6);}
-	25% { transform: scale(1); -webkit-transform: scale(1);}
-	50% { transform: scale(1.6); -webkit-transform: scale(1.6);}
-	75% { transform: scale(1); -webkit-transform: scale(1);}
+	25% { transform: scale(1.6); -webkit-transform: scale(1.6);}
+	50% { transform: scale(1.5); -webkit-transform: scale(1.5);}
+	75% { transform: scale(1.6); -webkit-transform: scale(1.6);}
 	100% { transform: scale(1.6); -webkit-transform: scale(1.6)}
   }
   @keyframes loader-inner {
-	0% { height: 50%;}
+	0% { height: 70%;}
 	25% { height: 100%;}
-	50% { height: 50%;}
+	50% { height: 70%;}
 	75% { height: 100%;}
-	100% { height: 50%;}
+	100% { height: 70%;}
   }
