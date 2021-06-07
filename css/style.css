@@ -22,7 +22,6 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-	z-index: 0;
 }
 
 nav::after {
@@ -39,11 +38,12 @@ nav > ul, .logo {
 	float: left;
 	height: 50px;
 	width: 16%;
-	background-image: url(../image/logo.png);
+	background-image: url(../image/logo3.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-right: 12%;
+	border-radius: 0 40px 40px 0;
 }
 
 nav ul {
@@ -56,7 +56,7 @@ nav ul {
 nav ul li {
 	float: left;
 	display: inline-block;
-	background-color: white;
+	background-color: transparent;
 	margin: 0 5px;
 }
 
@@ -70,8 +70,8 @@ nav ul li a {
 	text-transform: uppercase;
 	line-height: 50px;
 	font-size: 14px;
-	font-weight: 600;
-	letter-spacing: 2px;
+	font-weight: 700;
+	letter-spacing: 1px;
 	padding: 5px 8px;
 	transition: all .2s ease;
 	border-bottom: 3px solid rgba(255, 255, 255, 0);
@@ -94,7 +94,6 @@ nav ul li a:hover {
 
 .social-nav a i {
 	color: black;
-	background-color: rgb(240, 240, 240);
 	width: 34px;
 	height: 34px;
 	padding-top: 7px;
@@ -105,7 +104,7 @@ nav ul li a:hover {
 
 .social-nav a:hover i {
 	color: #DC3C4D;
-	background-color: rgb(245, 233, 233);
+	background-color: white;
 }
 
 
@@ -141,6 +140,7 @@ nav ul li a:hover {
 
 	nav {
 		padding-bottom: 0;
+		background-color: white;
 	}
 
 	.logo {
@@ -169,11 +169,12 @@ nav ul li a:hover {
 		display: inline-block !important;
 		width: 25px;
 		height: 25px;
-		color: #DC3C4D;
-		background-color: rgb(245, 233, 233);
+		color: rgb(189, 39, 39);
+		background: linear-gradient(to right,rgb(255, 241, 241), rgb(255, 220, 226));
 		text-align: center;
 		border-radius: 50%;
-		padding-top: 4px;
+		padding-top: 6px;
+		box-shadow: 0px 3px 5px #e9003e59;
 	}
 
 	nav ul li a {
@@ -181,6 +182,8 @@ nav ul li a:hover {
 		text-transform: capitalize;
 		letter-spacing: 0;
 		text-align: center;
+		font-size: 13px;
+		font-weight: 800;
 	}
 
 	[id^=btn]:checked + ul {
@@ -207,8 +210,9 @@ nav ul li a:hover {
 
 	.social-nav a i {
 		font-size: 18px;
-		color: #c24052;
-		background-color: rgb(245, 233, 233);
+		color: rgb(189, 39, 39);
+		background: linear-gradient(to right,rgb(255, 241, 241), rgb(255, 220, 226));
+		box-shadow: 0px 3px 5px #e9003e59;
 	}
 
 	#nav-ct {
@@ -277,7 +281,7 @@ nav ul li a:hover {
 
 .modal-dialog.em-norway .modal-content .modal-footer button {
 	width: 100%;
-	background-color: #ecdadb;
+	background-color: #e2e2e2;
 	color: #DC3C4D;
 	font-size: 15px;
 	font-weight: 600;
@@ -286,6 +290,10 @@ nav ul li a:hover {
 	padding: 5px 20px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	transition: .3s all;
+}
+.modal-dialog.em-norway .modal-content .modal-footer button:hover {
+	background-color: #dadada;
 }
 
 /**/
@@ -328,32 +336,43 @@ nav ul li a:hover {
 
 /**/
 .modal-dialog.em-mp .modal-content .modal-body span {
-	font-weight: 500;
-	font-size: 14px;
-	color: white;
-	background-color: #303952;
+	font-weight: 700;
+	font-size: 12px;
+	color: black;
 	display: block;
 	border-radius: 5px 5px 0 0;
 }
 .modal-dialog.em-mp .modal-content .modal-body a {
-	border-radius: 0 0 5px 5px;
+	border-radius: 10px;
 	height: 118px;
 	display: block;
 	padding: 4px 0;
 	margin-bottom: 20px;
 	transition: .3s ease;
-	border: solid 2px #303952;
-}
-.modal-dialog.em-mp .modal-content .modal-body a:hover {
-	box-shadow: 0px 3px 10px #3039528c;
+	border: solid 2px #dadada;
+	position: relative;
 }
 
 .modal-dialog.em-mp .modal-content .modal-body a.mpv1 {
 	background-image: url(../image/img_tramite.png);
 }
+
+
 .modal-dialog.em-mp .modal-content .modal-body a.mpv2 {
 	background-image: url(../image/img_idioma.png);
 }
+
+.modal-dialog.em-mp .modal-content .modal-body a.mpv1:hover {
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.8);
+	z-index:-1;
+}
+
 
 .modal-dialog.em-mp .modal-content .modal-body button {
 	background-color: #DC3C4D;
@@ -372,11 +391,11 @@ nav ul li a:hover {
 
 /* Video */
 #Home .Portada {
-	background-image: url(../image/cover_home1.PNG);
+	background-image: url(../image/cover_home.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	height: 700px;
+	height: 680px;
 	position: relative;
 }
 
@@ -392,7 +411,7 @@ nav ul li a:hover {
 	width: 300px;
 	height: 60px;
 	position: absolute;
-	top: 85%;
+	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-shadow: 0 5px 10px rgb(46, 0, 0);
@@ -407,10 +426,12 @@ nav ul li a:hover {
 }
 
 .videoNorway {
+	/*position: relative;*/
 	position: relative;
-	height: 580px;
+	background-attachment: fixed;
+	height: 700px;
   	width: 100%;
-  	z-index: 0.9;
+  	z-index: 0;
   	overflow: hidden;
 }
 
@@ -428,7 +449,7 @@ nav ul li a:hover {
 	font-size: 60px;
 	letter-spacing: 8px;
 	position: absolute;
-	z-index: 100;
+	z-index: 1;
 	width: 100%;
 	top: -20px;
 	/*background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0));*/
@@ -447,6 +468,10 @@ nav ul li a:hover {
 		top: 25%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	}
+
+	#Home .Portada .cover-name {
+		top: 76%;
 	}
 }
 
@@ -495,10 +520,76 @@ nav ul li a:hover {
 
 
 /* Intro */
-.intro {
-	height: 480px;
+
+#Me {
+	background: linear-gradient(#DC3C4D,white);
 	padding: 80px 0;
-	background-color: #DC3C4D;
+}
+#Me .photo-circle {
+	background-image: url(../image/photo_me.PNG);
+	background-size: cover;
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	position: relative;
+	border: 5px solid rgb(206, 29, 29);
+    box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
+	margin: 10% auto 1.25rem auto;
+}
+#Me p {
+	font-size: 17px;
+	font-weight: 500;
+	margin: 20px 0 80px 0;
+	color: black;
+	padding: 0 20px;
+	/*text-shadow: 0 5px 10px rgba(2, 0, 0, 0.884);*/
+}
+#Me b {
+	font-size: 24px;
+	text-shadow: 0 5px 10px rgba(212, 12, 12, 0);
+}
+
+#Me a {
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	margin: auto auto auto auto;
+	padding: 8px 6px;
+	border-radius: 5px;
+}
+
+#Me a button::before {
+	content: 'breve historia';
+}
+
+#Me a button {
+	position: relative;
+	width: 180px;
+	font-weight: 600;
+	font-size: 14px;
+	transition: all 0.5s ease 0s;
+	background: none;
+	outline: none;
+	border: none;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+#Me a:hover button {
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+
+
+
+/*
+.intro {
+	background-color: black;
+	background-attachment: fixed;
+	position: relative;
 }
 
 .intro .intro-text::before {
@@ -514,7 +605,7 @@ nav ul li a:hover {
 .intro .box-ip {
 	display: block;
 	text-align: center;
-	margin: 20px 0;
+	margin: 80px 0 10px 0;
 	position: relative;
 }
 
@@ -528,7 +619,6 @@ nav ul li a:hover {
 	background-position: center;
 	text-align: center;
 	border-radius: 5px;
-	box-shadow: 0px 3px 20px #c01627c7;
 	position: relative;
 }
 
@@ -556,66 +646,7 @@ nav ul li a:hover {
 	position: absolute;
 	bottom: 0;
 	border-radius: 0 0 5px 5px;
-}
-
-.intro a {
-	position: relative;
-	overflow: hidden;
-	background-color: white;
-	margin: 40px auto 1.25rem auto;
-	padding: 8px 6px;
-	border-radius: 5px;
-}
-
-.intro a button::before {
-	content: 'breve historia';
-}
-
-.intro a button {
-	position: relative;
-	width: 180px;
-	font-weight: 600;
-	font-size: 14px;
-	transition: all 0.5s ease 0s;
-	background: none;
-	outline: none;
-	border: none;
-	color: black;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin: 40px 0;
-}
-
-.intro a:hover button {
-	text-decoration: none;
-	letter-spacing: 2px;
-}
-
-
-#Me {
-	padding: 80px 0;
-}
-#Me .photo-circle {
-	background-image: url(../image/photo_me.PNG);
-	background-size: cover;
-	width: 210px;
-	height: 210px;
-	border-radius: 50%;
-	position: relative;
-	border: 5px solid rgb(206, 29, 29);
-    box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
-	margin: 0 auto 1.25rem auto;
-}
-#Me p {
-	font-size: 17px;
-	font-weight: 500;
-	margin: 20px 0 40px 0;
-	color: black;
-	padding: 0 20px;
-}
-#Me b {
-	font-size: 24px;
-}
+}*/
 /* Intro */
 
 
@@ -627,16 +658,6 @@ nav ul li a:hover {
 #MePlay {
 	/*background-color: rgb(253, 184, 184);*/
 	background-color: rgb(255, 255, 255);
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	-webkit-background-attachmen: fixed;
-	-moz-background-attachmen: fixed;
-	-o-background-attachmen: fixed;
-	background-repeat: no-repeat;
 	width: auto;
 	margin: 0;
 	text-align: center;
@@ -647,9 +668,9 @@ nav ul li a:hover {
 }
 
 #MePlay .photo-circle {
-	background-image: url(../Photos/2bedc1f2-3b6d-47b8-a944-3b8895ff31e2.jpg);
+	background-image: url(../image/photo_meplay.jpg);
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	width: 220px;
 	height: 220px;
 	border-radius: 50%;
@@ -1411,6 +1432,10 @@ nav ul li a:hover {
 		height: 188px;
 		object-fit: cover;
 	}
+
+	.logo-load::before {
+		content: 'E M';
+	}
 }
 
 
@@ -1605,7 +1630,7 @@ nav ul li a:hover {
 .loader-wrapper {
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: white;
@@ -1613,38 +1638,43 @@ nav ul li a:hover {
 	justify-items: center;
 	justify-content: center;
 	align-items: center;
-	z-index: 3;
+	z-index: 2;
 }
 
 .loader {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 500px;
+	height: 20px;
 	position: absolute;
-	border: 2px solid rgb(224, 4, 33);
 	animation: loader 2s infinite ease-in;
 	overflow: hidden;
+	top: 52%;
+	transform: translateX(-50%);
+	text-align: center;
 }
 
+.loader-inner::before {
+	content: 'E L I Z A B E T H';
+}
 .loader-inner {
 	vertical-align: top;
 	display: inline-block;
 	width: 100%;
-	background-color: rgb(255, 30, 68);
+	color: black;
 	animation: loader-inner 2s infinite ease-in;
 }
 
 @keyframes loader {
-	0% { transform: rotate(0deg);}
-	25% { transform: rotate(180deg);}
-	50% { transform: rotate(180deg);}
-	75% { transform: rotate(360deg);}
-	100% { transform: rotate(360deg);}
-}
-@keyframes loader-inner {
-	0% { height: 0%;}
-	25% { height: 0%;}
-	50% { height: 100%;}
+	0% { transform: scale(1.6); -webkit-transform: scale(1.6);}
+	25% { transform: scale(1); -webkit-transform: scale(1);}
+	50% { transform: scale(1.6); -webkit-transform: scale(1.6);}
+	75% { transform: scale(1); -webkit-transform: scale(1);}
+	100% { transform: scale(1.6); -webkit-transform: scale(1.6)}
+  }
+  @keyframes loader-inner {
+	0% { height: 50%;}
+	25% { height: 100%;}
+	50% { height: 50%;}
 	75% { height: 100%;}
-	100% { height: 0%;}
-}
+	100% { height: 50%;}
+  }
