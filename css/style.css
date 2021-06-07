@@ -591,7 +591,6 @@ nav ul li a:hover {
 	background-attachment: fixed;
 	position: relative;
 }
-
 .intro .intro-text::before {
 	content: 'conoce acerca Noruega';
 	letter-spacing: 5px;
@@ -601,14 +600,12 @@ nav ul li a:hover {
 	position: relative;
 	color: white;
 }
-
 .intro .box-ip {
 	display: block;
 	text-align: center;
 	margin: 80px 0 10px 0;
 	position: relative;
 }
-
 .intro .box-ip1,
 .intro .box-ip2 {
 	display: inline-block;
@@ -621,17 +618,14 @@ nav ul li a:hover {
 	border-radius: 5px;
 	position: relative;
 }
-
 .intro .box-ip1 {background-image: url(../image/Intro\ 1.JPG);}
 .intro .box-ip2 {background-image: url(../image/Intro\ 2.JPG);}
-
 @media screen and (max-width: 480px) {
 	.intro .box-ip1,
 	.intro .box-ip2 {
 		width: 310px;
 	}
 }
-
 .box-ip .box-ip1 .box-ip1-desc::before{
 	content: 'Parlamento de Oslo';
 }
@@ -931,7 +925,6 @@ nav ul li a:hover {
 .img-wrapper {
 	overflow: hidden;
 	position: relative;
-	border-radius: 5px;
 }
 
 .img-wrapper img {
@@ -972,12 +965,12 @@ nav ul li a:hover {
 
 .no-gutters .details .detcont h2 {
 	margin: 0 0 10px 0;
-	padding: 5px 10px;
+	padding: 7px 13px;
 	font-size: 18px;
 	font-weight: 600;
-	background-color: white;
-	color: black;
-	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.678);
+	color: white;
+	border-radius: 5px;
 }
 
 #NorwayPlace .btn-g {
