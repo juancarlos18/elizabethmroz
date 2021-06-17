@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 * {
 	font-family: 'Montserrat', sans-serif;
@@ -8,6 +8,10 @@ body {
 	height: 100%;
 	margin:	20;
 	padding: 20;
+}
+
+body section {
+	overflow: hidden;
 }
 
 html {scroll-behavior: smooth;}
@@ -22,6 +26,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+	padding: 10px 0;
 }
 
 nav::after {
@@ -37,7 +42,7 @@ nav > ul, .logo {
 .logo {
 	float: left;
 	height: 50px;
-	width: 16%;
+	width: 17%;
 	background-image: url(../image/logo3.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -129,14 +134,15 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width:1300px) {
-	.logo {margin-right: 10%;}}
-@media screen and (max-width:1080px) {
 	.logo {margin-right: 8%;}}
-@media screen and (max-width:996px) {
-	.logo {margin-right: 3%;}
-}
+@media screen and (max-width:1200px) {
+	.logo {margin-right: 6%;}}
+@media screen and (max-width:1100px) {
+	.logo {margin-right: 4%;}}
+@media screen and (max-width:1080px) {
+	.logo {margin-right: 0%;}}
 
-@media screen and (max-width:935px) {
+@media screen and (max-width:1019px) {
 
 	nav {
 		padding-bottom: 0;
@@ -297,44 +303,19 @@ nav ul li a:hover {
 }
 
 /**/
-.modal-dialog.em-gallery .modal-content,
 .modal-dialog.em-mp .modal-content {
 	background-color: white;
 	padding: 0 20px;
 	border-radius: 15px;
 }
-.modal-dialog.em-gallery .modal-content .modal-body img {
-	width: 90%;
-	margin: 20px 0;
-}
-.modal-dialog.em-mp .modal-content .modal-body h4,
-.modal-dialog.em-gallery .modal-content .modal-body h4 {
+.modal-dialog.em-mp .modal-content .modal-body h4 {
 	font-weight: 500;
 	font-size: 16px;
 	color: black;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-.modal-dialog.em-gallery .modal-content .modal-body p {
-	font-weight: 500;
-	font-size: 14px;
-	color: black;
-	text-transform: initial !important;	
-}
-.modal-dialog.em-gallery .modal-content .modal-body button {
-	background-color: #DC3C4D;
-	color: white;
-	font-size: 13px;
-	font-weight: 400;
-	outline: none;
-	border: none;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	width: 100%;
-}
 
-
-/**/
 .modal-dialog.em-mp .modal-content .modal-body span {
 	font-weight: 700;
 	font-size: 12px;
@@ -391,30 +372,32 @@ nav ul li a:hover {
 
 /* Video */
 #Home .Portada {
-	background-image: url(../image/cover_home.PNG);
+	background-image: url(../image/cover_home1.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	height: 680px;
+	height: 780px;
 	position: relative;
+	display: block;
 }
 
 #Home .Portada .cover-name::before {
 	content: 'Elizabeth Mroz';
 }
 #Home .Portada .cover-name {
-	color: white;
-	font-size: 30px;
-	font-weight: 400;
+	background-color: white;
+	padding: 10px 50px;
+	color: black;
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: 2px;
 	text-transform: uppercase;
-	letter-spacing: 8px;
 	width: 300px;
 	height: 60px;
 	position: absolute;
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	text-shadow: 0 5px 10px rgb(46, 0, 0);
 }
 
 .videoPortada {
@@ -429,7 +412,7 @@ nav ul li a:hover {
 	/*position: relative;*/
 	position: relative;
 	background-attachment: fixed;
-	height: 700px;
+	height: 900px;
   	width: 100%;
   	z-index: 0;
   	overflow: hidden;
@@ -462,16 +445,15 @@ nav ul li a:hover {
 		font-weight: 500;
 		font-size: 40px;
 	}
-	#Home .Portada span {
-		font-size: 35px;
-		width: 280px;
-		top: 25%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+	#Home .Portada {
+		height: 550px;
 	}
-
 	#Home .Portada .cover-name {
+		width: 250px;
 		top: 76%;
+		font-weight: 500;
+		letter-spacing: 3px;
+		font-size: 24px;
 	}
 }
 
@@ -522,8 +504,8 @@ nav ul li a:hover {
 /* Intro */
 
 #Me {
-	background: linear-gradient(#DC3C4D,white);
-	padding: 80px 0;
+	background: linear-gradient(white,rgb(241, 230, 218), rgb(223, 204, 184));
+	padding: 0 0 120px 0;
 }
 #Me .photo-circle {
 	background-image: url(../image/photo_me.PNG);
@@ -585,76 +567,17 @@ nav ul li a:hover {
 
 
 
-/*
-.intro {
-	background-color: black;
-	background-attachment: fixed;
-	position: relative;
-}
-.intro .intro-text::before {
-	content: 'conoce acerca Noruega';
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 400;
-	position: relative;
-	color: white;
-}
-.intro .box-ip {
-	display: block;
-	text-align: center;
-	margin: 80px 0 10px 0;
-	position: relative;
-}
-.intro .box-ip1,
-.intro .box-ip2 {
-	display: inline-block;
-	height: 200px;
-	width: 400px;
-	margin: 10px 15px;
-	background-size: cover;
-	background-position: center;
-	text-align: center;
-	border-radius: 5px;
-	position: relative;
-}
-.intro .box-ip1 {background-image: url(../image/Intro\ 1.JPG);}
-.intro .box-ip2 {background-image: url(../image/Intro\ 2.JPG);}
-@media screen and (max-width: 480px) {
-	.intro .box-ip1,
-	.intro .box-ip2 {
-		width: 310px;
-	}
-}
-.box-ip .box-ip1 .box-ip1-desc::before{
-	content: 'Parlamento de Oslo';
-}
-.box-ip .box-ip1 .box-ip1-desc,
-.box-ip .box-ip2 .box-ip2-desc {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.76));
-	color: white;
-	font-size: 16px;
-	font-weight: 500;
-	width: 100%;
-	height: 30px;
-	position: absolute;
-	bottom: 0;
-	border-radius: 0 0 5px 5px;
-}*/
-/* Intro */
-
-
-
-
 
 /* My Play*/
 
 #MePlay {
 	/*background-color: rgb(253, 184, 184);*/
-	background-color: rgb(255, 255, 255);
+	background: linear-gradient(white, rgb(252, 198, 184));
 	width: auto;
 	margin: 0;
+	padding: 40px 0 0 0;
 	text-align: center;
+	overflow: hidden;
 }
 
 #MePlay .news-active {
@@ -686,74 +609,6 @@ nav ul li a:hover {
 	font-weight: 600;
 }
 
-#MePlay .box-mp {
-	display: block;
-	margin-bottom: 60px;
-}
-
-#MePlay .box-mp1,
-#MePlay .box-mp2,
-#MePlay .box-mp3 {
-	display: inline-block;
-	height: 200px;
-	width: 300px;
-	margin: 10px 15px;
-	background-size: cover;
-	background-position: center;
-	text-align: center;
-}
-
-#MePlay .box-mp1 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/v5.jpg);}
-#MePlay .box-mp2 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_refuge.jpg);}
-#MePlay .box-mp3 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_job.jpg);}
-
-#MePlay a button {
-	padding: 8px 12px;
-	background-color: rgba(0, 0, 0, 0.521);
-	border: solid 2px white;
-	font-size: 16px;
-	font-weight: 500;
-	color: white;
-	text-decoration: none;
-	transition: .2s ease;
-	text-transform: capitalize;
-	letter-spacing: 2px;
-	position: relative;
-	top: 40%;
-}
-
-#MePlay a button:hover {
-	background-color: white;
-	color: black;
-	font-weight: 500;
-}
-
-@media screen and (max-width: 500px) {
-	#MePlay .photo-circle {
-		width: 180px;
-		height: 180px;
-	}
-
-	#MePlay .latest-news-wrap {
-		margin: 60px 0;
-	}
-}
-
-
-/**/
-@media screen and (max-width: 995px) {
-	.intro {
-		height: 720px;
-		padding: 60px 0;
-	}
-
-	#MePlay > div div {
-		width: 100%;
-		margin-bottom: 25px;
-	}
-}
-/**/
-
 /*My Play*/
 
 
@@ -763,60 +618,45 @@ nav ul li a:hover {
 
 
 
-
 /* WATCH */
 
 #Channel {
-	padding: 80px 0;
-	background-color: #DC3C4D;
+	margin: 0;
+	padding: 60px 0;
+	background: linear-gradient(rgb(252, 198, 184), rgb(255, 223, 215), #d4d4d4);
 }
 
-#Channel .section-title-watch h2 {
-	font-weight: 400;
-	color: white;
-	margin: 0 0 20px 20px;
+#Channel .section-title-watch i {
+	font-size: 20px;
+	color: #e21c30;
+	margin: 0 10px 0 15px;
+	border-radius: 50%;
+	padding: 10px 5px 0 5px;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	text-align: center;
 }
 
-#Channel .section-title-watch h2 font{
-	color: white;
+#Channel .section-title-watch font::before{
+	content: "Youtube";
+}
+#Channel .section-title-watch font{
+	color: #000000;
 	text-shadow: none;
 	font-weight: 700;
-	text-shadow: 0 5px 10px rgb(58, 0, 0);
-}
-
-@media screen and (max-width: 390px) {
-	#Channel .section-title-watch h2 {
-		font-size: 22px;
-	}
-	#Channel .section-title-watch h2 font {
-		font-size: 26px;
-	}
-}
-
-#Channel span::before {
-	content: 'Videos recientes';
-}
-#Channel span {
-	margin: 20px 0;
-	padding: 5px 15px;
-	font-size: 20px;
-	font-weight: 600;
-	color: black;
-	background-color: white;
-	border-radius: 20px;
+	font-size: 26px;
+	/*text-shadow: 0 5px 10px rgb(58, 0, 0);*/
 }
 
 #Channel .perfil-y {
-	/*background-color: rgb(230, 216, 216);*/
-	background-color: #aa1726;
-	box-shadow: 0px 3px 20px #ad0a1ac7;
-	height: 415px;
-	border-radius: 15px;
+	background: linear-gradient(#df2235, #5f000a);
+	height: 480px;
 	text-align: center;
 }
 
 #Channel .perfil-y p {
-	margin-top: 21px;
+	margin-top: 41px;
 	font-weight: 400;
 	font-size: 18px;
 	color: white;
@@ -834,17 +674,103 @@ nav ul li a:hover {
 }
 
 #Channel .perfil-y .photo-circle-y {
-	background-image: url(../Photos/v5.jpg);
+	background-image: url(../image/photo_me.PNG);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	width: 220px;
 	height: 220px;
 	border-radius: 50%;
 	position: relative;
-	border: 5px solid rgb(255, 255, 255);
-    box-shadow: 10px 10px 30px rgb(10 10 10 / 10%);
+	border: 3px solid rgba(253, 68, 68, 0);
+    box-shadow: 10px 10px 30px rgb(10 10 10 / 30%);
 	margin: 40px auto 1.25rem auto;
 }
+
+#Channel .box-mp {
+	display: block;
+	margin-bottom: 80px;
+}
+
+#Channel .box-mp1,
+#Channel .box-mp2,
+#Channel .box-mp3,
+#Channel .box-mp4 {
+	box-sizing: border-box;
+    float: left;
+	display: inline-block;
+	height: 220px;
+	width: 45%;
+	margin: 10px 17px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+#Channel .box-mp1 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../Photos/v5.jpg);}
+#Channel .box-mp2 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_refuge.jpg);}
+#Channel .box-mp3 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_job.jpg);}
+#Channel .box-mp4 {background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),url(../image/photo_job.jpg);}
+
+@media screen and (max-width: 1200px) {
+	#Channel .box-mp1, #Channel .box-mp2,
+	#Channel .box-mp3, #Channel .box-mp4 {
+		margin: 10px 13px;
+	}
+}
+@media screen and (max-width: 579px) {
+	#Channel .box-mp1, #Channel .box-mp2,
+	#Channel .box-mp3, #Channel .box-mp4 {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+#Channel a button {
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.521);
+	border: solid 2px white;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	transition: .2s ease;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	position: relative;
+	top: 40%;
+}
+
+#Channel a button:hover {
+	background-color: white;
+	color: black;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+	#Channel .photo-circle {
+		width: 180px;
+		height: 180px;
+	}
+
+	#Channel .latest-news-wrap {
+		margin: 60px 0;
+	}
+}
+
+
+/**/
+@media screen and (max-width: 995px) {
+	#Channel > div div {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+}
+/**/
+
+
+
+
 
 .video-responsive {
 	position: relative;
@@ -873,45 +799,19 @@ nav ul li a:hover {
 }
 
 
-#Channel .items {
-	display: flex;
-	overflow-x: auto;
-	margin: 20px 0;
-}
 
-#Channel .items .item {
-	min-width: 100%;
-	max-height: 200px;
-	margin: 10px 10px 10px 0;
-}
 
-#Channel .items::-webkit-scrollbar {
-	width: 0;
-}
-
-#Channel .items::-webkit-scrollbar-thumb {
-	background: linear-gradient(to right, #e27f89, white);
-	border-radius: 20px;
-}
-
-@media screen and (max-width: 1359px) {
-	#Channel .items::-webkit-scrollbar {
-		display: none;
-	}
-}
-
-/*
 #NorwayPlace {
-	background-color: rgb(231, 241, 237);
-}*/
+	background: linear-gradient(#d4d4d4, white, white);
+	padding: 80px 0;
+}
 
 #NorwayPlace .section-title h2 {
-	margin: 40px 0;
-	font-weight: 800;
+	margin: 0 0 50px 0;
+	font-weight: 500;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	color: black;
-	/*color: rgb(119, 204, 170);*/
 }
 
 .work {
@@ -944,10 +844,9 @@ nav ul li a:hover {
 	left: 15px;
 	bottom: 300px;
 	right: 15px;
-	/*background: linear-gradient(rgba(0, 0, 0, 0.192),rgba(0, 0, 0, 0));*/
-	font-weight: 400;
 	transform: scaleY(0);
 	transition: transform .5s;
+	overflow: hidden;
 }
 
 .no-gutters:hover .details {
@@ -957,20 +856,22 @@ nav ul li a:hover {
 
 .no-gutters .details .detcont {
 	position: absolute;
-	top: 20%;
+	top: 40px;
+	width: 100%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
-	padding: 15px;
+	text-align: center;
+	padding: 0 0 35px 0;
 }
 
 .no-gutters .details .detcont h2 {
-	margin: 0 0 10px 0;
-	padding: 7px 13px;
-	font-size: 18px;
+	padding: 40px 0;
+	font-size: 17px;
 	font-weight: 600;
-	background-color: rgba(0, 0, 0, 0.678);
-	color: white;
-	border-radius: 5px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	background: white;
+	color: #ff142b;
 }
 
 #NorwayPlace .btn-g {
@@ -984,6 +885,18 @@ nav ul li a:hover {
 	color: white;
 }
 
+@media (max-width:991px) {
+	.no-gutters .details {
+		left: 13px;
+		right: 13px;
+	}
+	.no-gutters .details .detcont {
+		padding: 0;
+	}
+	.no-gutters .details .detcont h2 {
+		font-weight: 700;
+	}
+}
 
 
 
@@ -1120,7 +1033,7 @@ nav ul li a:hover {
 	position: fixed;
 	align-items: center;
 	justify-content: center;
-	bottom: 20px;
+	bottom: 40px;
 	z-index: 1;
 	text-align: center;
 	left: 50%;
@@ -1130,10 +1043,10 @@ nav ul li a:hover {
 .social-media-i {
 	background-color: rgb(253, 244, 244);
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 15px;
 	visibility: hidden;
 	transition: all .2s ease;
-	box-shadow: 0px 1px 10px rgba(172, 0, 43, 0.541);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.308)
 }
 
 .social-media-i a, .icon-more2 {
@@ -1151,20 +1064,21 @@ nav ul li a:hover {
 	line-height: 40px;
 	background-color: rgb(211, 207, 207);
 	color: black;
-	box-shadow: 0px 1px 10px rgba(223, 0, 74, 0.199);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.199);
+	font-size: 20px;
 }
 
 .icon-more2 {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
-	background: linear-gradient(#e71135, rgb(156, 0, 47));
+	background: #ff0e0e;
 	color: white;
 }
 
 .social-media-i a:hover {
 	background-color: white;
-	color: #DC3C4D;
+	color: #ff0e0e;
 }
 
 .social-media-i a {
@@ -1193,7 +1107,7 @@ nav ul li a:hover {
 }
 
 .social-media-i a:first-child {
-	background-color: rgb(211, 38, 67); 
+	background-color: #ff0e0e; 
 	margin-right: 20px;
 }
 
@@ -1206,7 +1120,6 @@ nav ul li a:hover {
 		width: 50px;
 		height: 50px;
 		line-height: 50px;
-		margin-bottom: 10px;
 	}
 
 	.social-media-i a:first-child::after {
@@ -1218,12 +1131,13 @@ nav ul li a:hover {
 		width: 100%;
 		background-color: transparent;
 		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-		color: rgb(211, 38, 67);
+		color: #ff0e0e;
 		font-weight: 700;
+		font-size: 16px;
 	}
 
 	.social-media-i a:first-child i {
-		color: rgb(211, 38, 67);
+		color: #ff0e0e;
 		font-size: 20px;
 	}
 }
@@ -1262,16 +1176,18 @@ nav ul li a:hover {
 }
 /**/
 
+
 .gallery-background {
 	width: 100%;
 	height: 780px;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 70px;
 }
 
 .left {
 	height: 100%;
-	width: 41%;
+	width: 42%;
 	position: absolute;
 	left: 0;
 	background-image: url(../Photos/IMG_1489.JPG);
@@ -1304,7 +1220,7 @@ nav ul li a:hover {
 
 .right {
 	height: 100%;
-	width: 59%;
+	width: 58%;
 	position: absolute;
 	right: 0;
 }
@@ -1331,6 +1247,12 @@ nav ul li a:hover {
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
+	transition: 1s;
+	padding: 15px;
+}
+
+.gallery-item img:hover {
+	transform: scale(1.1);
 }
 
 @media(min-width:640px) {
@@ -1612,6 +1534,16 @@ nav ul li a:hover {
 }
 
 
+/*div line*/
+
+.div-line {
+	background-color: #DC3C4D;
+	width: 80px;
+	height: 5px;
+	border-radius: 10px;
+	position: relative;
+	margin: 40px auto 0px auto;
+}
 
 
 
