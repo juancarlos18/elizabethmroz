@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 	  dropRadius: 2,
 	  perturbance: 0.001,
 	});
-	/*
+	
 	$(window).scroll(function(){
 
 		var top = $(window).scrollTop();
@@ -17,65 +17,8 @@ jQuery(document).ready(function($){
 				$("nav").removeClass('secondary');
 			}
 		}
-	});*/
-
-
-	var swiper = new Swiper('.swiper-container', {
-		effect: 'coverflow',
-		grabCursor: true,
-		centeredSlides: true,
-		slidesPerView: 'auto',
-		coverflowEffect: {
-		  rotate: 20,
-		  stretch: 0,
-		  depth: 200,
-		  modifier: 1,
-		  slideShadows: true,
-		},
-		pagination: {
-		  el: '.swiper-pagination',
-		},
 	});
 
-
-/*
-	$('.post-wrapper').slick({
-	  slidesToShow: 1,//
-	  slidesToScroll: 1,
-	  autoplay: false,
-	  autoplaySpeed: 2000,
-	  nextArrow: $('.next'),
-	  prevArrow: $('.prev'),
-	  responsive: [
-	    {
-	      breakpoint: 1024,
-	      settings: {
-	        slidesToShow: 1,//
-	        slidesToScroll: 1,//
-	        infinite: true,
-	        dots: true
-	      }
-	    },
-	    {
-	      breakpoint: 600,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
-	  ]
-	});
-*/
 
 
 	$('.work').magnificPopup({
@@ -90,35 +33,40 @@ jQuery(document).ready(function($){
 })
 
 
+var v = document.getElementsByTagName("video");
+v.play();
+v.muted = true;
 
-const navSlide = () => {
-	const burger = document.querySelector('.burger');
-	const nav =document.querySelector('.nav-items');
-	const navItems = document.querySelectorAll('.nav-items li')
-	
-	burger.addEventListener('click', () => {
-		//Toggle nav
-		nav.classList.toggle('nav-active')
 
-		//Animation items
-		navItems.forEach((item, index) => {
-			if (item.style.animation) {
-				item.style.animation = '';
-			} else {
-				item.style.animation = `navItemFade 0.2s ease forwards ${index / 10}s`;
-			}
-		});
 
-		//Burger animation
-		burger.classList.toggle('toggle');
-	});
+
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 50,
+            sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
 }
-
-navSlide();
-
+window.addEventListener('scroll', scrollActive)
 
 
-
-	var v = document.getElementsByTagName("video");
-	v.play();
-	v.muted = true;
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader(){
+    const header = document.getElementById('header')
+    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
