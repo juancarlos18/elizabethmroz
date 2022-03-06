@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <link rel="shortcut icon" type="image/x-ico" href="image/em.ico">
         <title>Home : Elizabeth</title>
         <link rel="stylesheet" href="css/style.css" />
@@ -19,7 +20,7 @@
         <script src="https://apis.google.com/js/platform.js"></script>
 
         <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/96b0689b91.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/73d66682d4.js" crossorigin="anonymous"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -27,43 +28,46 @@
 
 
 
-    <body>
+    <body ontouchstart="">
         <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
         <script>$(window).on("load",function(){$(".loader-wrapper").fadeOut("slow");});</script>
 
-        <header>
-            <nav class="navbar-fixed-top">
-                <div class="logo"></div>
-                <ul class="nav-items">
-                    <li><i class="fas fa-home"></i><a href="#Home">Inicio</a></li>
-                    <li><i class="fas fa-female"></i><a href="#Me">Sobre mí</a></li>
-                    <li><i class="fab fa-youtube"></i><a href="#Channel">Canal de youtube</a></li>
-                    <li><i class="fas fa-play-circle"></i><a href="#MePlay">fotos y videos</a></li>
-                    <li><a href="#Contact" id="nav-ct">Contacto</a></li>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav-logo">E L I Z A B E T H</a>
 
-                    <div class="social-nav">
-                        <a href="https://www.facebook.com/ElizabethMrozOficial"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/elizabetmroz/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/@elizabethmrz1?lang=es"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </ul>
-                
-        
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="#Home" class="nav-link active-link"><i class="fa-solid fa-house nav-icon"></i><span class="nav-name">Inicio</span></a></li>
+                        <li class="nav-item"><a href="#Me" class="nav-link"><i class="fa-solid fa-user nav-icon"></i></i><span class="nav-name">Sobre mí</span></a></li>
+                        <li class="nav-item"><a href="#Channel" class="nav-link"><i class="fa-solid fa-play  nav-icon"></i><span class="nav-name">Canal</span></a></li>
+                        <li class="nav-item"><a href="#MePlay" class="nav-link"><i class="fa-solid fa-clapperboard nav-icon"></i><span class="nav-name">Fotos y videos</span></a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link"><i class="fa-solid fa-comments nav-icon"></i><span>Contacto</span></a></li>
+                    </ul>
                 </div>
+
+                <div class="nav-menu2" id="nav-menu2">
+                    <ul class="nav-links">
+                        <li><a href="https://www.facebook.com/ElizabethMrozOficial"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/elizabetmroz/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q"><i class="fab fa-youtube"></i></a>
+                        <li><a href="https://www.tiktok.com/@elizabethmrz1?lang=es"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+
+                <img src="image/photo_me.PNG" alt="" class="nav-img">
             </nav>
+            <!-- <a class="cta" href="https://www.facebook.com/ElizabethMrozOficial"></i><button><i class="fab fa-facebook-f"></i></button></a>
+            <a class="cta" href="https://www.instagram.com/elizabetmroz/"><i class="fab fa-instagram"></i></a>
+            <a class="cta" href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q"><i class="fab fa-youtube"></i></a>
+            <a class="cta" href="https://www.tiktok.com/@elizabethmrz1?lang=es"><i class="fab fa-tiktok"></i></a> -->
         </header>
 
 
-        <section id="Home" class="text-center">
+        <section id="Home">
             <div class="Portada">
-                <h1 class="cover-name"></h1>
             </div>
         </section>
 
@@ -73,7 +77,7 @@
                     <div class="photo-circle"></div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <p> <b>Hola, soy Elizabeth</b> <br>peruana que vive hace algunos años en Noruega. <br>
+                    <p> <b>Hola, soy Elizabeth</b> <br>peruana que vive hace algunos años en Noruega. <br><br>
                     La experiencia vivida la deseo compartir con ustedes. <br><br>
                     Ahora conocerás de todo un poco y así tú tambien podras formar parte de esta hermosa cultura que tiene este país.</p>
                     <div class="text-center"><a><button data-target="#norway-modal" data-toggle="modal"></button></a></div>
@@ -85,9 +89,9 @@
 
         <section id="Norway" class="text-center">
             <div class="videoNorway">
-                <h3><br>NORUEGA</h3>
+                <h3></h3>
                 <video id="portada-n" muted autoplay playsinline preload="auto" loop="true">
-                    <source src="Videos/Norway people.mp4" type="video/mp4">Tu navegador no soporta este formato<code>video</code>.
+                    <source src="Videos/TRONDHEIM _ NORWAY 4K.webm" type='video/webm; codecs="vp8, vorbis"'>Tu navegador no soporta este formato<code>video</code>.
                 </video>
             </div>
         </section>
@@ -310,21 +314,21 @@
 
 
         <!-- Redes Sociales -->
-            <section id="Contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="logo-c"></div>
-                        <div class="logo-c2"></div>
-                    </div>
-                    <div class="social-media">
-                        <div><p>Contáctame a través de mis redes sociales</p></div><br>
-                        <li><a href="https://www.instagram.com/elizabetmroz/"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/ElizabethMrozOficial"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://www.tiktok.com/@elizabethmrz1?lang=es"><i class="fab fa-tiktok"></i></a></li>
-                    </div>
-                </div><br>
-            </section>
+        <section id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-c"></div>
+                    <div class="logo-c2"></div>
+                </div>
+                <div class="social-media">
+                    <div><p>Contáctame a través de mis redes sociales</p></div><br>
+                    <li><a href="https://www.instagram.com/elizabetmroz/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/ElizabethMrozOficial"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCCV4bNXSqc7YdmhMaLP7z7Q"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@elizabethmrz1?lang=es"><i class="fab fa-tiktok"></i></a></li>
+                </div>
+            </div><br>
+        </section>
         <!-- Redes Sociales -->
 
 
@@ -341,8 +345,7 @@
         <!-- Footer -->
 
 
-        <script src="js/main.js" type="text/javascript"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>>
     </body>
 
 
