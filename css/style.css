@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
 	box-sizing: border-box;
-	font-family: 'Playfair Display', serif;
+	font-family: 'M PLUS 2', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -18,7 +17,6 @@ html {scroll-behavior: smooth;}
 
 ul {list-style: none;}
 a {text-decoration: none;}
-
 body {height: 100%;}
 body section {overflow: hidden;}
 
@@ -26,7 +24,6 @@ body section {overflow: hidden;}
 
 /*  L A Y O U T  */
 .container {
-	max-width: 968px;
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
@@ -41,7 +38,7 @@ body section {overflow: hidden;}
 	width: 100%;
 	z-index: 1;
 	transition: .4s;
-	background-color: #fffffffb;
+	background-color: #FFFFFF;
 }
 /**/
 
@@ -52,12 +49,13 @@ body section {overflow: hidden;}
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px 0;
+	padding: 22px 0;
 }
 
 .nav-menu a {
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .nav-menu2 {
@@ -68,7 +66,7 @@ body section {overflow: hidden;}
 .nav-menu2 a {
 	color: black;
 	transition: all .3s;
-	font-size: 18px;
+	font-size: 19px;
 }
 
 .nav-menu2 a:hover {
@@ -83,11 +81,12 @@ body section {overflow: hidden;}
 }
 
 .nav-logo {
-	color: black;
-	font-weight: 400;
-	font-size: 18px;
+	color: rgb(121, 121, 121);
+	font-weight: 300;
+	font-size: 25px;
 	margin-right: auto;
 	margin-left: 0;
+	letter-spacing: -1px;
 }
 
 .nav-logo:hover {
@@ -369,25 +368,27 @@ body section {overflow: hidden;}
 
 
 
-/* V I D E O   P O R T A DA */
-#Home .Portada {
-	background-image: url(../image/Cover.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	height: 700px;
-	position: relative;
+/* V I D E O   P O R T A D A */
+#Home {
 	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
 }
 
+#Home .Portada {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url(../image/Cover.jpg);
+}
 
 .videoPortada {
 	position: relative;
 	height: 780px;
   	width: 100%;
   	z-index: 0.9;
-  	overflow: hidden;
 }
 
 .videoNorway {
@@ -433,7 +434,7 @@ body section {overflow: hidden;}
 		font-size: 40px;
 	}
 	#Home .Portada {
-		height: 550px;
+		height: 70vh;
 	}
 	#Home .Portada .cover-name {
 		width: 250px;
@@ -491,7 +492,6 @@ body section {overflow: hidden;}
 /* Intro */
 
 #Me {
-	background-color: white;
 	padding: 50px 0 120px 0;
 }
 #Me .photo-circle {
@@ -1576,8 +1576,10 @@ body section {overflow: hidden;}
 }
 
 @keyframes loader {
-	0% { transform: scale(1.6); -webkit-transform: scale(1.6);}
-	25% { transform: scale(1.6); -webkit-transform: scale(1.6);}
+	0% { transform: scale(1.6); 
+		-webkit-transform: scale(1.6);}
+	25% { transform: scale(1.6); 
+		-webkit-transform: scale(1.6);}
 	50% { transform: scale(1.5); -webkit-transform: scale(1.5);}
 	75% { transform: scale(1.6); -webkit-transform: scale(1.6);}
 	100% { transform: scale(1.6); -webkit-transform: scale(1.6)}
